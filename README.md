@@ -8,6 +8,5 @@
 
 `` 
 #Ignore MD files
-
 *.md
 ``
