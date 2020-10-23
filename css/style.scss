@@ -6,6 +6,8 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	outline-color: #ef672f;
+	outline-width: 2px;
 }
 
 ul {
@@ -13,6 +15,7 @@ ul {
 }
 
 a {
+	color: #666;
 	text-decoration: none;
 }
 
@@ -25,10 +28,16 @@ h6 {
 	font-weight: 400;
 }
 
+button {
+	background: none;
+	border: none;
+}
+
 /* SVG's */
 svg {
 	height: 16px;
 	width: 16px;
+	background: none;
 }
 
 .user__icon svg {
@@ -40,8 +49,12 @@ svg {
 	width: 20px;
 	height: 10px;
 }
+.sidebar__nav svg {
+	width: 8px;
+	height: 9px;
+}
 
-/* General Styles */
+/* General Styles - Logo, Sidebar & Header*/
 body {
 	background-color: #f0f0f0;
 	background-size: auto;
@@ -51,12 +64,74 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 
-	font-family: "Montserrat", sans-serif;
+	font-family: Montserrat, sans-serif;
 	font-size: 1em;
 }
 
+.wrapper {
+	display: flex;
+	padding: 1em;
+}
+
+.sidebar,
+main {
+	border: 1px solid blue;
+}
+
+/* Sidebar */
+/** Logo **/
+.sidebar__logo {
+	display: grid;
+	place-content: center;
+	border: 1px solid red;
+}
+
+/** Nav **/
+.sidebar__nav {
+	color: #666;
+	font-size: 1.2em;
+	font-weight: 500;
+	text-transform: uppercase;
+
+	height: 100%;
+	display: grid;
+	place-content: center;
+	margin-top: -8em;
+
+	li {
+		line-height: 3em;
+	}
+
+	.nav__block {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav__header {
+		padding-left: 1em;
+
+		svg {
+			margin: 0 0.3em;
+		}
+	}
+
+	.nav__items {
+		// border: 1px solid red;
+
+		li {
+			padding: 0 3em;
+
+			&.active {
+				padding-left: 2.7em;
+				background-color: #fff;
+				border-left: 5px solid #332070;
+			}
+		}
+	}
+}
+
 /* 
-    1 Overview 
+    1 Overview Content
 */
 
 /* 1 Overview */

@@ -6,6 +6,8 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  outline-color: #ef672f;
+  outline-width: 2px;
 }
 
 ul {
@@ -13,6 +15,7 @@ ul {
 }
 
 a {
+  color: #666;
   text-decoration: none;
 }
 
@@ -25,10 +28,16 @@ h6 {
   font-weight: 400;
 }
 
+button {
+  background: none;
+  border: none;
+}
+
 /* SVG's */
 svg {
   height: 16px;
   width: 16px;
+  background: none;
 }
 
 .user__icon svg {
@@ -41,7 +50,12 @@ svg {
   height: 10px;
 }
 
-/* General Styles */
+.sidebar__nav svg {
+  width: 8px;
+  height: 9px;
+}
+
+/* General Styles - Logo, Sidebar & Header*/
 body {
   background-color: #f0f0f0;
   background-size: auto;
@@ -49,12 +63,78 @@ body {
   background-position: bottom 0 left 0, bottom 0 right 0, top 0 right 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: "Montserrat", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1em;
 }
 
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+}
+
+.sidebar,
+main {
+  border: 1px solid blue;
+}
+
+/* Sidebar */
+/** Logo **/
+.sidebar__logo {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  border: 1px solid red;
+}
+
+/** Nav **/
+.sidebar__nav {
+  color: #666;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  margin-top: -8em;
+}
+
+.sidebar__nav li {
+  line-height: 3em;
+}
+
+.sidebar__nav .nav__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebar__nav .nav__header {
+  padding-left: 1em;
+}
+
+.sidebar__nav .nav__header svg {
+  margin: 0 0.3em;
+}
+
+.sidebar__nav .nav__items li {
+  padding: 0 3em;
+}
+
+.sidebar__nav .nav__items li.active {
+  padding-left: 2.7em;
+  background-color: #fff;
+  border-left: 5px solid #332070;
+}
+
 /* 
-    1 Overview 
+    1 Overview Content
 */
 /* 1 Overview */
 /*# sourceMappingURL=style.css.map */

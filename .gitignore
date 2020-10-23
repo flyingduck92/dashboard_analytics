@@ -1,0 +1,3 @@
+# Ignore prettier files
+.prettierrc
+.prettierignore
