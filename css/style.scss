@@ -34,15 +34,16 @@ button {
 }
 
 /* SVG's */
-svg {
-	height: 16px;
+.search__btn svg {
 	width: 16px;
+	height: 16px;
 	background: none;
 }
 
 .user__icon svg {
-	width: 18px;
+	width: 16px;
 	height: 20px;
+	display: block;
 }
 
 .user__dropdown svg {
@@ -68,9 +69,24 @@ body {
 	font-size: 1em;
 }
 
+.logo {
+	display: block;
+}
+
 .wrapper {
 	display: flex;
 	padding: 1em;
+}
+
+select,
+input {
+	font-family: Montserrat, sans-serif;
+	text-transform: uppercase;
+	background-color: #f0f0f0;
+	// background-color: red;
+	border: 0;
+	outline-color: #ef672f;
+	text-align: left;
 }
 
 .sidebar,
@@ -80,21 +96,21 @@ body {
 
 /* Sidebar & Main*/
 .sidebar {
-	flex: 0 0 0%;
+	flex: 0 0 auto;
 	position: relative;
 }
 .main {
-	flex: 0 0 90%;
+	flex: 1;
+	padding: 0 3em;
 }
 
 /** Logo **/
 .sidebar__logo {
 	display: grid;
 	place-content: center;
-	border: 1px solid red;
 }
 
-/** Nav **/
+/** Nav Style**/
 .sidebar__nav {
 	color: #666;
 	font-size: 1.2em;
@@ -102,9 +118,10 @@ body {
 	text-transform: uppercase;
 
 	height: 100vh;
-	display: grid;
-	place-content: center;
-	margin-top: -8em;
+
+	// display: grid;
+	// place-content: center;
+	// margin-top: -5em;
 
 	position: relative;
 
@@ -115,10 +132,17 @@ body {
 	.nav__block {
 		display: flex;
 		flex-direction: column;
+		margin-top: 80%;
+
+		cursor: pointer;
 	}
 
 	.nav__header {
 		padding-left: 1em;
+		padding: 0em 6.25em 0 1em;
+		margin-right: auto;
+
+		border: 1px solid red;
 
 		svg {
 			margin: 0 0.3em;
@@ -126,18 +150,54 @@ body {
 	}
 
 	.nav__items {
-		// border: 1px solid red;
+		display: flex;
+		flex-direction: column;
 
 		li {
-			padding: 0 3em;
+			a {
+				display: block;
+				padding: 0em 3.5em;
+			}
 
 			&.active {
-				padding-left: 2.7em;
 				background-color: #fff;
 				border-left: 5px solid #332070;
 			}
 		}
 	}
+}
+
+/* Nav-Style Control Experiment*/
+// #realtime__item {
+// 	display: none;
+// }
+
+/** Header **/
+.main__header__channel,
+.main__header__search,
+.main__header__user {
+	margin: 0.8em 0;
+
+	border: 1px solid red;
+}
+.main__header {
+	border: 1px solid red;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.main__header__search,
+.main__header__user {
+	display: flex;
+}
+
+.main__content__graph {
+	margin-top: 1em;
+	// border: 1px solid red;
 }
 
 /* 

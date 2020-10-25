@@ -11,12 +11,12 @@
 			<div class="sidebar">
 				<div class="sidebar__logo">
 					<a href="index.html"
-						><img src="img/logo.png" alt="Logo"
+						><img src="img/logo.png" class="logo" alt="Logo"
 					/></a>
 				</div>
 				<nav class="sidebar__nav">
 					<ul class="nav__block">
-						<li class="nav__header">
+						<li class="nav__header" id="realtime">
 							<svg>
 								<path
 									d="M4.43685 8.21429C4.2427 8.59524 3.7573 8.59524 3.56315 8.21429L0.0683336 1.35714C-0.125823 0.97619 0.116873 0.5 0.505186 0.5L7.49481 0.5C7.88313 0.5 8.12582 0.976191 7.93167 1.35714L4.43685 8.21429Z"
@@ -25,7 +25,7 @@
 							</svg>
 							<span>Realtime</span>
 						</li>
-						<ul class="nav__items">
+						<ul class="nav__items" id="realtime__item">
 							<li class="active">
 								<a href="index.html">Overview</a>
 							</li>
@@ -46,7 +46,11 @@
 						</select>
 					</div>
 					<div class="main__header__search">
-						<input type="text" class="search__input" />
+						<input
+							type="search"
+							class="search__input"
+							placeholder="masukkan page title/link"
+						/>
 						<button type="submit" class="search__btn">
 							<svg>
 								<path
@@ -73,13 +77,7 @@
 							<p>User</p>
 						</div>
 						<button type="button" class="user__dropdown">
-							<svg
-								width="20"
-								height="10"
-								viewBox="0 0 20 10"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
+							<svg>
 								<path
 									fill-rule="evenodd"
 									clip-rule="evenodd"
@@ -88,9 +86,6 @@
 								/>
 							</svg>
 						</button>
-						<ul>
-							<li><a href="logout.html">Logout</a></li>
-						</ul>
 					</div>
 				</header>
 				<section class="main__content">
@@ -114,7 +109,7 @@
 							</div>
 						</div>
 					</aside>
-					<div class="main__content__data">
+					<!-- <div class="main__content__data">
 						<h1 class="data__title">Overview</h1>
 						<article class="top__active">
 							<h3 class="data__subtitle">Top Active Page</h3>
@@ -129,50 +124,50 @@
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Quo, necessitatibus!
 									</td>
-									<td class="data__table_elipsis">
+									<td class="data__table__elipsis">
 										http://news.detik.com/berita
 									</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Quo, necessitatibus!
 									</td>
-									<td class="data__table_elipsis">
+									<td class="data__table__elipsis">
 										http://news.detik.com/berita
 									</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Quo, necessitatibus!
 									</td>
-									<td class="data__table_elipsis">
+									<td class="data__table__elipsis">
 										http://news.detik.com/berita
 									</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Quo, necessitatibus!
 									</td>
-									<td class="data__table_elipsis">
+									<td class="data__table__elipsis">
 										http://news.detik.com/berita
 									</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>
 										Lorem ipsum dolor sit amet consectetur
 										adipisicing elit. Quo, necessitatibus!
 									</td>
-									<td class="data__table_elipsis">
+									<td class="data__table__elipsis">
 										http://news.detik.com/berita
 									</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 							</table>
 						</article>
@@ -185,23 +180,23 @@
 								</tr>
 								<tr>
 									<td>Direct</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>Referal</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>Organic</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>Campaign</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>Social</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 							</table>
 						</article>
@@ -214,23 +209,23 @@
 								</tr>
 								<tr>
 									<td>Berita hari ini</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>Berita sepakbola</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>kecelakaan</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>corona</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 								<tr>
 									<td>polsek ciracas</td>
-									<td>300 <span>/</span> 10%</td>
+									<td>300 / 10%</td>
 								</tr>
 							</table>
 						</article>
@@ -269,7 +264,7 @@
 								</tr>
 							</table>
 						</article>
-					</div>
+					</div> -->
 				</section>
 			</main>
 		</div>
