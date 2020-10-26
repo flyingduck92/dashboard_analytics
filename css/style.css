@@ -285,6 +285,15 @@ input {
   text-align: center;
 }
 
+.main__content__graph .graph.landscape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .main__content__graph .graph__counter {
   padding: 1em 2em;
 }
@@ -299,7 +308,11 @@ input {
 
 .main__content__graph .counter__minutes {
   font-size: 0.625em;
-  line-height: 22px;
+  line-height: 15px;
+}
+
+.main__content__graph .graph__chart {
+  padding: 1.5em 2em;
 }
 
 .main__content__graph .graph__img {
@@ -308,18 +321,19 @@ input {
 }
 
 .main__content__graph .graph__percentage {
-  padding: 1em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-left: 1.3em;
 }
 
 .main__content__graph .percentage {
   text-align: left;
   position: relative;
+  margin-top: 1em;
 }
 
 .main__content__graph .percentage .point {

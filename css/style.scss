@@ -269,6 +269,11 @@ input {
 		background-color: #fff;
 		border-radius: 8px;
 		text-align: center;
+
+		&.landscape {
+			display: flex;
+			align-items: center;
+		}
 	}
 
 	.graph__counter {
@@ -282,21 +287,24 @@ input {
 	}
 	.counter__minutes {
 		font-size: 0.625em;
-		line-height: 22px;
+		line-height: 15px;
 	}
-
+	.graph__chart {
+		padding: 1.5em 2em;
+	}
 	.graph__img {
 		display: block;
 		margin: 0 auto;
 	}
 	.graph__percentage {
-		padding: 1em 2em;
 		display: flex;
 		justify-content: space-between;
+		padding-left: 1.3em;
 	}
 	.percentage {
 		text-align: left;
 		position: relative;
+		margin-top: 1em;
 
 		.point {
 			position: absolute;
