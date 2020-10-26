@@ -255,6 +255,7 @@ input {
 
 .main__header__user {
   gap: 0.5em;
+  margin-right: 0;
 }
 
 .main__content__graph {
