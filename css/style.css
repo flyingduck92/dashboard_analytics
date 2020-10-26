@@ -215,6 +215,7 @@ input {
   padding: 0.9em 1em;
   border-radius: 100vh;
   color: #666;
+  line-height: 22px;
   background-color: transparent;
   appearance: none;
   -webkit-appearance: none;
@@ -237,6 +238,7 @@ input {
 
 .main__header__search .search__input,
 .main__header__search .search__btn {
+  line-height: 25px;
   padding: 0.8em 1em;
   border-radius: 100vh 0 0 100vh;
   background-color: transparent;
@@ -258,13 +260,102 @@ input {
   margin-right: 0;
 }
 
-.main__content__graph {
+/* 
+    Main Content Style
+*/
+.main__content {
   margin-top: 1em;
+  border: 1px solid blue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5em;
+}
+
+.main__content__graph {
+  background-color: transparent;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #332070;
+}
+
+.main__content__graph .graph {
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.main__content__graph .graph__counter {
+  padding: 1em 2em;
+}
+
+.main__content__graph .counter__total {
+  font-size: 4em;
+}
+
+.main__content__graph .counter__users {
+  color: #666;
+}
+
+.main__content__graph .counter__minutes {
+  font-size: 0.625em;
+  line-height: 22px;
+}
+
+.main__content__graph .graph__img {
+  display: block;
+  margin: 0 auto;
+}
+
+.main__content__graph .graph__percentage {
+  padding: 1em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__content__graph .percentage {
+  text-align: left;
+  position: relative;
+}
+
+.main__content__graph .percentage .point {
+  position: absolute;
+  left: -30%;
+  bottom: 2.5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.main__content__graph .percentage .point.mobile {
+  background: linear-gradient(126.63deg, #332070 3.89%, #562b77 52.48%, #aa248c 90.47%);
+}
+
+.main__content__graph .percentage .point.desktop {
+  background: linear-gradient(126.63deg, #332070 3.89%, #562b77 52.48%, #aa248c 90.47%);
+  opacity: 0.7;
+}
+
+.main__content__graph .percentage h4 {
+  color: #332070;
+  font-size: 2em;
+}
+
+.main__content__graph .percentage p {
+  font-size: 12px;
+  font-size: #666;
+}
+
+.main__content__data {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   border: 1px solid red;
 }
 
-/* 
-    1 Overview Content
-*/
 /* 1 Overview */
 /*# sourceMappingURL=style.css.map */
