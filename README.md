@@ -7,6 +7,5 @@
 ###### .prettierignore Setup
 
 `` 
-#Ignore MD files
 *.md
 ``
