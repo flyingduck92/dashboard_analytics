@@ -309,6 +309,7 @@ input {
 }
 
 .main__content__graph .counter__minutes {
+  margin-top: 0.5em;
   font-size: 0.625em;
   line-height: 15px;
 }
