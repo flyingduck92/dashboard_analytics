@@ -6,8 +6,10 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	outline-color: #ef672f;
-	outline-width: 2px;
+
+	:focus {
+		outline: 3px solid #ef672f;
+	}
 }
 
 ul {
@@ -83,9 +85,7 @@ input {
 	font-family: Montserrat, sans-serif;
 	text-transform: uppercase;
 	background-color: #f0f0f0;
-	// background-color: red;
 	border: 0;
-	outline-color: #ef672f;
 	text-align: left;
 }
 
@@ -141,8 +141,6 @@ input {
 		padding-left: 1em;
 		padding: 0em 6.25em 0 1em;
 		margin-right: auto;
-
-		border: 1px solid red;
 
 		svg {
 			margin: 0 0.3em;
