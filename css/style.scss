@@ -89,12 +89,9 @@ input {
 	text-align: left;
 }
 
-.sidebar,
-.main {
-	border: 1px solid blue;
-}
-
-/* Sidebar & Main*/
+/* 
+	Sidebar & Main
+*/
 .sidebar {
 	flex: 0 0 auto;
 	position: relative;
@@ -174,12 +171,8 @@ input {
 .main__header__channel,
 .main__header__search,
 .main__header__user {
-	// margin: 0.3em 0;
 	margin-right: 1em;
 	margin-bottom: 0.8em;
-
-	// border: 1px solid red;
-	// border-radius: 100vh;
 }
 .main__header {
 	width: 100%;
@@ -249,12 +242,15 @@ input {
 }
 
 /* 
-    Main Content Style
+	Main Content Style
+	01 Graph
+	02 Data Table
 */
-
+/* 
+	01 Graph 
+*/
 .main__content {
 	margin-top: 1em;
-	border: 1px solid blue;
 
 	display: flex;
 	gap: 1.5em;
@@ -271,7 +267,7 @@ input {
 		border-radius: 8px;
 		text-align: center;
 
-		&.landscape {
+		&.graph--landscape {
 			display: flex;
 			align-items: center;
 		}
@@ -346,9 +342,91 @@ input {
 	}
 }
 
+/* 
+	02 Data Table 
+*/
 .main__content__data {
-	flex: 1;
-	border: 1px solid red;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 1em;
+
+	.data__title {
+		color: #332070;
+		font-size: 3em;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	.data__subtitle {
+		color: #ef672f;
+		font-size: 23px;
+		font-weight: 700;
+		text-transform: uppercase;
+		margin: 1em 0;
+	}
+	.data__container {
+		background-color: #fff;
+		padding: 1em 1.5em;
+		border-radius: 8px;
+	}
+	.data__table {
+		width: 100%;
+		background-color: #fff;
+		text-align: left;
+		border-collapse: collapse;
+
+		th,
+		td {
+			padding: 0.5em;
+		}
+
+		th {
+			font-weight: 600;
+		}
+		td {
+			font-weight: 700;
+		}
+
+		tr:first-child {
+			border-bottom: 1px solid #ccc;
+			th {
+				color: #562b77;
+			}
+		}
+
+		tr:not(:first-child):hover {
+			background-color: #f0f0f0;
+		}
+
+		td:first-child,
+		td:nth-child(2) {
+			max-width: 228px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			line-height: 25px;
+		}
+		th:last-child,
+		td:last-child {
+			text-align: center;
+		}
+	}
+}
+
+.top__medium,
+.top__keyword {
+	flex: 1 1 49%;
+}
+.top__active,
+.top__source {
+	flex: 1 1 100%;
+}
+
+.top__active,
+.top__medium,
+.top__keyword,
+.top__source {
+	// border: 1px solid red;
 }
 
 /* 1 Overview */
