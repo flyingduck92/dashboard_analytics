@@ -302,7 +302,8 @@ input {
   font-size: 4em;
 }
 
-.main__content__graph .counter__users {
+.main__content__graph .counter__users,
+.main__content__graph .counter__minutes {
   color: #666;
 }
 
@@ -361,7 +362,7 @@ input {
 
 .main__content__graph .percentage p {
   font-size: 12px;
-  font-size: #666;
+  color: #666;
 }
 
 .main__content__data {

@@ -282,7 +282,8 @@ input {
 	.counter__total {
 		font-size: 4em;
 	}
-	.counter__users {
+	.counter__users,
+	.counter__minutes {
 		color: #666;
 	}
 	.counter__minutes {
@@ -338,7 +339,7 @@ input {
 		}
 		p {
 			font-size: 12px;
-			font-size: #666;
+			color: #666;
 		}
 	}
 }
