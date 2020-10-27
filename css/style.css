@@ -460,11 +460,14 @@ input {
 }
 
 .main__content__data .data__subtitle {
-  color: #ef672f;
+  margin: 0.5em 0 1em;
   font-size: 23px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0.5em 0 1em;
+}
+
+.main__content__data .data__subtitle a {
+  color: #ef672f;
 }
 
 .main__content__data .data__search {

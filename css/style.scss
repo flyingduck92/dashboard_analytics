@@ -414,11 +414,13 @@ input {
 		text-transform: uppercase;
 	}
 	.data__subtitle {
-		color: #ef672f;
+		margin: 0.5em 0 1em;
 		font-size: 23px;
 		font-weight: 700;
 		text-transform: uppercase;
-		margin: 0.5em 0 1em;
+		a {
+			color: #ef672f;
+		}
 	}
 	.data__search {
 		/* This search shared style with .main__header__search (see code above)*/
