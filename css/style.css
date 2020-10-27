@@ -177,14 +177,15 @@ input {
 }
 
 .sidebar__nav .nav__items li a {
+  /* Navigation @item*/
   display: block;
-  padding: 0em 3.5em;
+  padding: 0em 3em;
 }
 
 .sidebar__nav .nav__items li.active {
   background-color: #fff;
   border-left: 5px solid #332070;
-  /* set nav active state on hover to current padding */
+  /* Set Navigation active state on hover to current padding */
 }
 
 .sidebar__nav .nav__items li.active a {
@@ -193,7 +194,7 @@ input {
 }
 
 .sidebar__nav .nav__items li.active:hover a {
-  padding: 0em 3.5em;
+  padding: 0em 3em;
 }
 
 /* Nav-Style Control Experiment*/
