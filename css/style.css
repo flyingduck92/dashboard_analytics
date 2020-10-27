@@ -98,6 +98,7 @@ input {
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   position: relative;
+  border-right: 1px solid #ccc;
 }
 
 .main {
@@ -168,6 +169,11 @@ input {
 .sidebar__nav .nav__items li.active {
   background-color: #fff;
   border-left: 5px solid #332070;
+}
+
+.sidebar__nav .nav__items li.active a {
+  font-weight: 600;
+  color: #332070;
 }
 
 /* Nav-Style Control Experiment*/
@@ -275,6 +281,9 @@ input {
 }
 
 .main__content__graph {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
   background-color: transparent;
   font-weight: 500;
   text-transform: uppercase;
@@ -372,6 +381,9 @@ input {
 	02 Data Table 
 */
 .main__content__data {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 80%;
+          flex: 1 1 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,6 +433,12 @@ input {
 }
 
 .main__content__data .data__table td {
+  font-weight: 500;
+}
+
+.main__content__data .data__table tr:not(:first-child) td:first-child,
+.main__content__data .data__table tr:not(:first-child) td:first-child a {
+  color: #562b77;
   font-weight: 700;
 }
 
