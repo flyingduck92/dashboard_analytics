@@ -266,7 +266,7 @@ input {
 	margin-top: 1em;
 
 	display: flex;
-	gap: 1.5em;
+	gap: 1.8em;
 }
 
 .main__content__graph {
@@ -366,7 +366,16 @@ input {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	gap: 1em;
+	gap: 1.8em;
+
+	.top__medium,
+	.top__keyword {
+		flex: 1 1 48%;
+	}
+	.top__active,
+	.top__source {
+		flex: 1 1 100%;
+	}
 
 	.data__title {
 		color: #332070;
@@ -379,7 +388,7 @@ input {
 		font-size: 23px;
 		font-weight: 700;
 		text-transform: uppercase;
-		margin: 1em 0;
+		margin: 0.5em 0 1em;
 	}
 	.data__container {
 		background-color: #fff;
@@ -435,15 +444,6 @@ input {
 			text-align: center;
 		}
 	}
-}
-
-.top__medium,
-.top__keyword {
-	flex: 1 1 49%;
-}
-.top__active,
-.top__source {
-	flex: 1 1 100%;
 }
 
 .top__active,
