@@ -111,7 +111,8 @@ input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 0 3em;
+  /* TRiBLe */
+  padding: 0 0 0 3em;
 }
 
 /** Logo **/
