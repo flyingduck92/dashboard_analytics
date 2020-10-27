@@ -78,7 +78,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1em;
+  padding: 1.25em 2em;
 }
 
 select,
@@ -193,7 +193,7 @@ input {
 .main__header__channel,
 .main__header__search,
 .main__header__user {
-  margin-right: 1em;
+  margin-right: 1.8em;
   margin-bottom: 0.8em;
 }
 
@@ -210,7 +210,6 @@ input {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 0;
 }
 
 .main__header__search,

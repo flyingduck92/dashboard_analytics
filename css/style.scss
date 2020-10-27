@@ -77,7 +77,7 @@ body {
 
 .wrapper {
 	display: flex;
-	padding: 1em;
+	padding: 1.25em 2em;
 }
 
 select,
@@ -188,7 +188,7 @@ input {
 .main__header__channel,
 .main__header__search,
 .main__header__user {
-	margin-right: 1em;
+	margin-right: 1.8em;
 	margin-bottom: 0.8em;
 }
 .main__header {
@@ -198,7 +198,6 @@ input {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 0;
 }
 
 .main__header__search,
