@@ -8,7 +8,7 @@
           box-sizing: border-box;
 }
 
-* :focus {
+*:focus-visible {
   outline: 3px solid #ef672f;
 }
 
