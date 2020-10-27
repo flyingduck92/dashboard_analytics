@@ -383,6 +383,16 @@ input {
 		flex: 1 1 100%;
 	}
 
+	.top__source {
+		/* Overview Page */
+		tr:not(:first-child) {
+			td:nth-child(2) a {
+				color: #562b77;
+				font-weight: 700;
+			}
+		}
+	}
+
 	/* General Style of Data Table on Overview*/
 	.data__title {
 		color: #332070;

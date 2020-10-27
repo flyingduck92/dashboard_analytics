@@ -423,6 +423,15 @@ input {
           flex: 1 1 100%;
 }
 
+.main__content__data .top__source {
+  /* Overview Page */
+}
+
+.main__content__data .top__source tr:not(:first-child) td:nth-child(2) a {
+  color: #562b77;
+  font-weight: 700;
+}
+
 .main__content__data .data__title {
   color: #332070;
   font-size: 3em;
