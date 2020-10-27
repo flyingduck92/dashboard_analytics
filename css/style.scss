@@ -166,7 +166,7 @@ input {
 				color: #332070;
 			}
 			a {
-				/* Navigation @item*/
+				/* Navigation */
 				display: block;
 				padding: 0em 3em;
 			}
@@ -387,9 +387,9 @@ input {
 	.top__medium,
 	.top__keyword {
 		flex: 1 1 48%;
-		&--100 {
-			flex: 1 1 100%;
-		}
+	}
+	.top__keyword--full-page {
+		flex: 1 1 100%;
 	}
 	.top__active,
 	.top__source {
@@ -432,6 +432,9 @@ input {
 		background-color: #fff;
 		padding: 1em 1.5em;
 		border-radius: 8px;
+		min-width: 380px;
+	}
+	.data__container--full-page {
 		min-width: 580px;
 	}
 	.data__table {
