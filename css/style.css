@@ -161,6 +161,14 @@ input {
           flex-direction: column;
 }
 
+.sidebar__nav .nav__items li:hover a {
+  display: block;
+  padding: 0em 3.5em;
+  background-color: #fff;
+  font-weight: 600;
+  color: #332070;
+}
+
 .sidebar__nav .nav__items li a {
   display: block;
   padding: 0em 3.5em;

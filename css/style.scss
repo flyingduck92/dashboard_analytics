@@ -150,6 +150,13 @@ input {
 		flex-direction: column;
 
 		li {
+			&:hover a {
+				display: block;
+				padding: 0em 3.5em;
+				background-color: #fff;
+				font-weight: 600;
+				color: #332070;
+			}
 			a {
 				display: block;
 				padding: 0em 3.5em;
