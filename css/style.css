@@ -163,7 +163,6 @@ input {
 
 .sidebar__nav .nav__items li:hover a {
   display: block;
-  padding: 0em 3.7em;
   background-color: #fff;
   font-weight: 600;
   color: #332070;
