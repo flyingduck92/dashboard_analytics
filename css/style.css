@@ -91,7 +91,7 @@ input {
 }
 
 /* 
-	Sidebar & Main
+	Sidebar & Main Content
 */
 .sidebar {
   -webkit-box-flex: 0;
@@ -189,7 +189,7 @@ input {
 }
 
 /* Nav-Style Control Experiment*/
-/** Header **/
+/** Header Style **/
 .main__header__channel,
 .main__header__search,
 .main__header__user {
@@ -197,7 +197,7 @@ input {
   margin-bottom: 0.8em;
 }
 
-.main__header {
+.main__header form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -299,6 +299,7 @@ input {
   font-weight: 500;
   text-transform: uppercase;
   color: #332070;
+  /* Graph Style */
 }
 
 .main__content__graph .graph {
@@ -404,6 +405,8 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1.8em;
+  /* Overview Data Table*/
+  /* General Style of Data Table on Overview*/
 }
 
 .main__content__data .top__medium,

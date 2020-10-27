@@ -90,7 +90,7 @@ input {
 }
 
 /* 
-	Sidebar & Main
+	Sidebar & Main Content
 */
 .sidebar {
 	flex: 0 0 auto;
@@ -184,14 +184,15 @@ input {
 // 	display: none;
 // }
 
-/** Header **/
+/** Header Style **/
 .main__header__channel,
 .main__header__search,
 .main__header__user {
 	margin-right: 1.8em;
 	margin-bottom: 0.8em;
 }
-.main__header {
+
+.main__header form {
 	width: 100%;
 
 	display: flex;
@@ -280,6 +281,7 @@ input {
 	text-transform: uppercase;
 	color: #332070;
 
+	/* Graph Style */
 	.graph {
 		background-color: #fff;
 		border-radius: 8px;
@@ -371,6 +373,7 @@ input {
 	justify-content: space-between;
 	gap: 1.8em;
 
+	/* Overview Data Table*/
 	.top__medium,
 	.top__keyword {
 		flex: 1 1 48%;
@@ -380,6 +383,7 @@ input {
 		flex: 1 1 100%;
 	}
 
+	/* General Style of Data Table on Overview*/
 	.data__title {
 		color: #332070;
 		font-size: 3em;
