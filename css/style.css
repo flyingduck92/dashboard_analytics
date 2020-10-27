@@ -250,7 +250,8 @@ input {
   background-origin: content-box;
 }
 
-.main__header__search {
+.main__header__search,
+.data__search {
   border: 1px solid #ccc;
   border-radius: 100vh;
   -webkit-box-flex: 1;
@@ -259,21 +260,25 @@ input {
 }
 
 .main__header__search .search__input,
-.main__header__search .search__btn {
+.main__header__search .search__btn,
+.data__search .search__input,
+.data__search .search__btn {
   line-height: 25px;
   padding: 0.8em 1em;
   border-radius: 100vh 0 0 100vh;
   background-color: transparent;
 }
 
-.main__header__search .search__input {
+.main__header__search .search__input,
+.data__search .search__input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   color: #666;
 }
 
-.main__header__search .search__btn {
+.main__header__search .search__btn,
+.data__search .search__btn {
   width: 60px;
 }
 
@@ -423,6 +428,13 @@ input {
           flex: 1 1 48%;
 }
 
+.main__content__data .top__medium--100,
+.main__content__data .top__keyword--100 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
 .main__content__data .top__active,
 .main__content__data .top__source {
   -webkit-box-flex: 1;
@@ -454,10 +466,24 @@ input {
   margin: 0.5em 0 1em;
 }
 
+.main__content__data .data__search {
+  /* This search shared style with .main__header__search (see code above)*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 0.8em;
+  width: 50%;
+  margin-left: auto;
+}
+
 .main__content__data .data__container {
   background-color: #fff;
   padding: 1em 1.5em;
   border-radius: 8px;
+  min-width: 580px;
 }
 
 .main__content__data .data__table {

@@ -240,7 +240,8 @@ input {
 	}
 }
 
-.main__header__search {
+.main__header__search,
+.data__search {
 	border: 1px solid #ccc;
 	border-radius: 100vh;
 	flex: 1;
@@ -385,6 +386,9 @@ input {
 	.top__medium,
 	.top__keyword {
 		flex: 1 1 48%;
+		&--100 {
+			flex: 1 1 100%;
+		}
 	}
 	.top__active,
 	.top__source {
@@ -415,10 +419,19 @@ input {
 		text-transform: uppercase;
 		margin: 0.5em 0 1em;
 	}
+	.data__search {
+		/* This search shared style with .main__header__search (see code above)*/
+		display: flex;
+		justify-content: flex-end;
+		margin-bottom: 0.8em;
+		width: 50%;
+		margin-left: auto;
+	}
 	.data__container {
 		background-color: #fff;
 		padding: 1em 1.5em;
 		border-radius: 8px;
+		min-width: 580px;
 	}
 	.data__table {
 		width: 100%;
