@@ -82,6 +82,12 @@ body {
 }
 
 select,
+button {
+  cursor: pointer;
+}
+
+select,
+option,
 input {
   font-family: Montserrat, sans-serif;
   text-transform: uppercase;
@@ -138,6 +144,7 @@ input {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 80%;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -163,8 +170,8 @@ input {
 
 .sidebar__nav .nav__items li:hover a {
   display: block;
-  background-color: #fff;
   font-weight: 600;
+  background-color: #fff;
   color: #332070;
 }
 
@@ -180,7 +187,7 @@ input {
 }
 
 .sidebar__nav .nav__items li.active a {
-  font-weight: 600;
+  font-weight: 700;
   color: #332070;
 }
 
@@ -504,6 +511,4 @@ input {
 .main__content__data .data__table td:last-child {
   text-align: center;
 }
-
-/* 1 Overview */
 /*# sourceMappingURL=style.css.map */
