@@ -308,7 +308,6 @@ input {
   display: -ms-flexbox;
   display: flex;
   gap: 1.8em;
-  border: 1px solid blue;
 }
 
 .main__content--wrap {
@@ -317,8 +316,11 @@ input {
   margin-bottom: 1.8em;
 }
 
+.main__content--mt-extra {
+  margin-top: 0.5em;
+}
+
 .main__content__graph {
-  border: 1px solid red;
   background-color: transparent;
   font-weight: 500;
   text-transform: uppercase;
@@ -417,7 +419,6 @@ input {
 	02 Data Table 
 */
 .main__content__data {
-  border: 1px solid red;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 45%;
           flex: 1 1 45%;
@@ -466,14 +467,6 @@ input {
   font-weight: 700;
 }
 
-/* main__content__data modifier for page.html */
-.main__content__data--title {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  border: 1px solid red;
-}
-
 /* General Style of Data Table*/
 .data__title {
   color: #332070;
@@ -485,7 +478,8 @@ input {
 
 .data__title--medium {
   font-size: 2.25em;
-  text-align: center;
+  text-align: left;
+  text-transform: capitalize;
 }
 
 .data__subtitle {
@@ -573,5 +567,110 @@ input {
 .data__table th:last-child,
 .data__table td:last-child {
   text-align: center;
+}
+
+/* main__content__data for page.html */
+.main__content__filter {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1em;
+}
+
+.main__content__counter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  position: relative;
+}
+
+.data__table--extra-width th:nth-child(2),
+.data__table--extra-width th:nth-child(3),
+.data__table--extra-width td:nth-child(2),
+.data__table--extra-width td:nth-child(3) {
+  text-align: center;
+}
+
+.data__table--extra-width td:first-child,
+.data__table--extra-width td:nth-child(2) {
+  max-width: 500px;
+}
+
+button.filter__btn,
+button.clear__btn {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0.5em 20px;
+  margin-right: 20px;
+  font-weight: 500;
+  background-color: #562b77;
+  color: #fff;
+  line-height: 25px;
+  border-radius: 5px;
+  position: relative;
+}
+
+button.clear__btn {
+  text-transform: uppercase;
+  background-color: #ef672f;
+}
+
+button.filter__btn:after,
+button.clear__btn:after {
+  content: "\1F5D9";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 20px;
+  height: 100%;
+  padding-right: 10px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #562b77;
+}
+
+button.clear__btn:after {
+  background-color: #ef672f;
+}
+
+.data__counter__container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.data__counter {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: right;
+  color: #562b77;
+}
+
+.data__counter span {
+  font-size: 2em;
+  display: block;
+  color: #ef672f;
 }
 /*# sourceMappingURL=style.css.map */
