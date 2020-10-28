@@ -195,7 +195,7 @@ input {
 			&:hover a {
 				display: block;
 				font-weight: 600;
-				background-color: #fff;
+				background-color: rgba(255, 255, 255, 0.8);
 				color: #332070;
 			}
 			a {
@@ -205,7 +205,7 @@ input {
 			}
 
 			&.active {
-				background-color: #fff;
+				background-color: rgba(255, 255, 255, 0.8);
 				border-left: 5px solid #332070;
 
 				a {
@@ -339,7 +339,7 @@ input {
 
 	/* Graph Style */
 	.graph {
-		background-color: #fff;
+		background-color: rgba(255, 255, 255, 0.8);
 		border-radius: 8px;
 		text-align: center;
 	}
@@ -486,7 +486,7 @@ input {
 	margin-left: auto;
 }
 .data__container {
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.8);
 	padding: 1em 1.5em;
 	border-radius: 8px;
 	min-width: 380px;
@@ -496,7 +496,7 @@ input {
 }
 .data__table {
 	width: 100%;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.8);
 	text-align: left;
 	border-collapse: collapse;
 
@@ -625,7 +625,7 @@ button.clear__btn:after {
 	right: 0;
 	padding: 20px;
 	border-radius: 8px;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.8);
 }
 
 .data__counter {
@@ -641,9 +641,9 @@ button.clear__btn:after {
 	}
 }
 
-.top__active,
-.top__medium,
-.top__keyword,
-.top__source {
-	// border: 1px solid red;
-}
+// .top__active,
+// .top__medium,
+// .top__keyword,
+// .top__source {
+// 	// border: 1px solid red;
+// }
