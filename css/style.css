@@ -21,6 +21,11 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #ef672f;
+}
+
 h1,
 h2,
 h3,
@@ -59,7 +64,7 @@ button {
   height: 9px;
 }
 
-/* General Styles - Logo, Sidebar & Header*/
+/* General Styles - Logo, Sidebar & Header */
 body {
   background-color: #f0f0f0;
   background-size: auto;
@@ -303,12 +308,17 @@ input {
   display: -ms-flexbox;
   display: flex;
   gap: 1.8em;
+  border: 1px solid blue;
+}
+
+.main__content--wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1.8em;
 }
 
 .main__content__graph {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 20%;
-          flex: 1 1 20%;
+  border: 1px solid red;
   background-color: transparent;
   font-weight: 500;
   text-transform: uppercase;
@@ -322,7 +332,7 @@ input {
   text-align: center;
 }
 
-.main__content__graph .graph.graph--landscape {
+.main__content__graph .graph--landscape {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,20 +417,24 @@ input {
 	02 Data Table 
 */
 .main__content__data {
+  border: 1px solid red;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 80%;
-          flex: 1 1 80%;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1.8em;
-  /* Overview Data Table*/
-  /* General Style of Data Table on Overview*/
+  /* Overview - Data Table*/
+  /* Keyword Page - Data Table  */
 }
 
 .main__content__data .top__medium,
@@ -430,14 +444,14 @@ input {
           flex: 1 1 48%;
 }
 
-.main__content__data .top__keyword--full-page {
+.main__content__data .top__active,
+.main__content__data .top__source {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
 }
 
-.main__content__data .top__active,
-.main__content__data .top__source {
+.main__content__data .top__keyword--full-page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
@@ -452,25 +466,40 @@ input {
   font-weight: 700;
 }
 
-.main__content__data .data__title {
+/* main__content__data modifier for page.html */
+.main__content__data--title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  border: 1px solid red;
+}
+
+/* General Style of Data Table*/
+.data__title {
   color: #332070;
   font-size: 3em;
   font-weight: 700;
   text-transform: uppercase;
+  word-wrap: break-word;
 }
 
-.main__content__data .data__subtitle {
+.data__title--medium {
+  font-size: 2.25em;
+  text-align: center;
+}
+
+.data__subtitle {
   margin: 0.5em 0 1em;
   font-size: 23px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.main__content__data .data__subtitle a {
+.data__subtitle a {
   color: #ef672f;
 }
 
-.main__content__data .data__search {
+.data__search {
   /* This search shared style with .main__header__search (see code above)*/
   display: -webkit-box;
   display: -ms-flexbox;
@@ -483,57 +512,57 @@ input {
   margin-left: auto;
 }
 
-.main__content__data .data__container {
+.data__container {
   background-color: #fff;
   padding: 1em 1.5em;
   border-radius: 8px;
   min-width: 380px;
 }
 
-.main__content__data .data__container--full-page {
+.data__container--full-page {
   min-width: 580px;
 }
 
-.main__content__data .data__table {
+.data__table {
   width: 100%;
   background-color: #fff;
   text-align: left;
   border-collapse: collapse;
 }
 
-.main__content__data .data__table th,
-.main__content__data .data__table td {
+.data__table th,
+.data__table td {
   padding: 0.5em;
 }
 
-.main__content__data .data__table th {
+.data__table th {
   font-weight: 600;
 }
 
-.main__content__data .data__table td {
+.data__table td {
   font-weight: 500;
 }
 
-.main__content__data .data__table tr:not(:first-child) td:first-child,
-.main__content__data .data__table tr:not(:first-child) td:first-child a {
+.data__table tr:not(:first-child) td:first-child,
+.data__table tr:not(:first-child) td:first-child a {
   color: #562b77;
   font-weight: 700;
 }
 
-.main__content__data .data__table tr:first-child {
+.data__table tr:first-child {
   border-bottom: 1px solid #ccc;
 }
 
-.main__content__data .data__table tr:first-child th {
+.data__table tr:first-child th {
   color: #562b77;
 }
 
-.main__content__data .data__table tr:not(:first-child):hover {
+.data__table tr:not(:first-child):hover {
   background-color: #f0f0f0;
 }
 
-.main__content__data .data__table td:first-child,
-.main__content__data .data__table td:nth-child(2) {
+.data__table td:first-child,
+.data__table td:nth-child(2) {
   max-width: 228px;
   white-space: nowrap;
   overflow: hidden;
@@ -541,8 +570,8 @@ input {
   line-height: 25px;
 }
 
-.main__content__data .data__table th:last-child,
-.main__content__data .data__table td:last-child {
+.data__table th:last-child,
+.data__table td:last-child {
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
