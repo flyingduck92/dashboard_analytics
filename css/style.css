@@ -41,6 +41,28 @@ button {
   outline: none;
 }
 
+/* Custom Scrollbar */
+/* Mozilla */
+html {
+  overflow-x: hidden;
+  scrollbar-color: #ccc #f0f0f0;
+}
+
+/* Chrome */
+html::-webkit-scrollbar {
+  width: 22px;
+  height: 22px;
+}
+
+html::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #ccc, #ccc 1px, #f0f0f0 0, #f0f0f0);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: linear-gradient(126.63deg, #ef672f 3.89%, #aa248c 52.48%, #332070 90.47%);
+  border-radius: 100vh;
+}
+
 /* SVG's */
 .search__btn svg {
   width: 16px;
