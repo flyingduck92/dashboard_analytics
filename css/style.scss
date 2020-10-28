@@ -296,8 +296,8 @@ input {
 	margin-bottom: 1.8em;
 }
 
-.main__content--mt-extra {
-	margin-top: 0.5em;
+.main__content--mb-extra {
+	margin-bottom: 2.5em;
 }
 
 .main__content__graph {
@@ -549,13 +549,19 @@ button.filter__btn,
 button.clear__btn {
 	font-size: 14px;
 	line-height: 22px;
-	padding: 0.5em 20px;
-	margin-right: 20px;
+	/* TRBL */
+	padding: 0.5em 30px 0.5em 20px;
+	margin-right: 10px;
 	font-weight: 500;
 	background-color: #562b77;
 	color: #fff;
 	line-height: 25px;
 	border-radius: 5px;
+
+	max-width: 265px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 
 	position: relative;
 }
@@ -568,7 +574,7 @@ button.clear__btn:after {
 	content: "\1F5D9";
 	position: absolute;
 	top: 0;
-	right: -20px;
+	right: -5px;
 
 	width: 20px;
 	height: 100%;
@@ -579,6 +585,7 @@ button.clear__btn:after {
 	align-items: center;
 	justify-content: center;
 	background-color: #562b77;
+	// border: 1px solid red;
 }
 button.clear__btn:after {
 	background-color: #ef672f;
