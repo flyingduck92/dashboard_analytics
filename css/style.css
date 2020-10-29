@@ -294,7 +294,6 @@ input {
 .data__search .search__btn {
   line-height: 25px;
   padding: 0.8em 1em;
-  border-radius: 100vh 0 0 100vh;
   background-color: transparent;
 }
 
@@ -304,11 +303,13 @@ input {
       -ms-flex: 1;
           flex: 1;
   color: #666;
+  border-radius: 100vh 0 0 100vh;
 }
 
 .main__header__search .search__btn,
 .data__search .search__btn {
   width: 60px;
+  border-radius: 0 100vh 100vh 0;
 }
 
 .main__header__user {

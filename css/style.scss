@@ -284,15 +284,16 @@ input {
 	.search__btn {
 		line-height: 25px;
 		padding: 0.8em 1em;
-		border-radius: 100vh 0 0 100vh;
 		background-color: transparent;
 	}
 	.search__input {
 		flex: 1;
 		color: #666;
+		border-radius: 100vh 0 0 100vh;
 	}
 	.search__btn {
 		width: 60px;
+		border-radius: 0 100vh 100vh 0;
 	}
 }
 
