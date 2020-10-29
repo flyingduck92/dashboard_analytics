@@ -383,6 +383,7 @@ input {
   margin-top: 0.5em;
   font-size: 0.625em;
   line-height: 15px;
+  letter-spacing: 1.2px;
 }
 
 .main__content__graph .graph__chart {
