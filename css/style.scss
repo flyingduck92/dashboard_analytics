@@ -175,6 +175,10 @@ input {
 
 		font-weight: 500;
 		cursor: pointer;
+
+		/* Sticky Navigation */
+		position: sticky;
+		top: 1.8em;
 	}
 
 	.nav__header {
