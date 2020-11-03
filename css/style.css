@@ -595,6 +595,7 @@ input {
 .data__table th:last-child,
 .data__table td:last-child {
   text-align: center;
+  white-space: nowrap;
 }
 
 /* main__content__data for page.html */
