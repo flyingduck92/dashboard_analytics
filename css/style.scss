@@ -156,7 +156,8 @@ input {
 	font-weight: 500;
 	text-transform: uppercase;
 
-	height: 100vh;
+	height: 85%;
+	// border-left: 1px solid red;
 
 	// display: grid;
 	// place-content: center;
@@ -171,14 +172,14 @@ input {
 	.nav__block {
 		display: flex;
 		flex-direction: column;
-		margin-top: 80%;
+		margin-top: 50%;
 
 		font-weight: 500;
 		cursor: pointer;
 
 		/* Sticky Navigation */
 		position: sticky;
-		top: 1.8em;
+		top: 4em;
 	}
 
 	.nav__header {
@@ -575,7 +576,7 @@ input {
 	}
 	td:first-child,
 	td:nth-child(2) {
-		max-width: 500px;
+		max-width: 400px;
 	}
 }
 
@@ -641,6 +642,7 @@ button.clear__btn:after {
 	font-weight: 700;
 	text-align: right;
 	color: #562b77;
+	white-space: nowrap;
 
 	& span {
 		font-size: 2em;

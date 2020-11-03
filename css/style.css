@@ -156,7 +156,7 @@ input {
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
-  height: 100vh;
+  height: 85%;
   position: relative;
 }
 
@@ -172,13 +172,13 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 80%;
+  margin-top: 50%;
   font-weight: 500;
   cursor: pointer;
   /* Sticky Navigation */
   position: -webkit-sticky;
   position: sticky;
-  top: 1.8em;
+  top: 4em;
 }
 
 .sidebar__nav .nav__header {
@@ -632,7 +632,7 @@ input {
 
 .data__table--extra-width td:first-child,
 .data__table--extra-width td:nth-child(2) {
-  max-width: 500px;
+  max-width: 400px;
 }
 
 button.filter__btn,
@@ -699,6 +699,7 @@ button.clear__btn:after {
   font-weight: 700;
   text-align: right;
   color: #562b77;
+  white-space: nowrap;
 }
 
 .data__counter span {
