@@ -547,7 +547,6 @@ input {
 
 .data__table {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
   text-align: left;
   border-collapse: collapse;
 }
@@ -584,7 +583,7 @@ input {
 }
 
 .data__table tr:first-child {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: unset;
 }
 
 .data__table tr:not(:first-child):hover {

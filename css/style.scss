@@ -503,7 +503,6 @@ input {
 }
 .data__table {
 	width: 100%;
-	background-color: rgba(255, 255, 255, 0.8);
 	text-align: left;
 	border-collapse: collapse;
 
@@ -537,9 +536,8 @@ input {
 		background-color: #f7f7f7;
 	}
 	tr:first-child {
-		background-color: rgba(255, 255, 255, 0.8);
+		background-color: unset;
 	}
-
 	tr:not(:first-child):hover {
 		background-color: #eaeaea;
 	}
