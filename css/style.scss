@@ -537,7 +537,7 @@ input {
 		background-color: #f7f7f7;
 	}
 	tr:first-child {
-		background-color: #fff;
+		background-color: rgba(255, 255, 255, 0.8);
 	}
 
 	tr:not(:first-child):hover {

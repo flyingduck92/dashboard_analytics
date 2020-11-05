@@ -584,7 +584,7 @@ input {
 }
 
 .data__table tr:first-child {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .data__table tr:not(:first-child):hover {
