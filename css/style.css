@@ -579,8 +579,16 @@ input {
   color: #562b77;
 }
 
+.data__table tr:nth-child(2n + 1) {
+  background-color: #f7f7f7;
+}
+
+.data__table tr:first-child {
+  background-color: #fff;
+}
+
 .data__table tr:not(:first-child):hover {
-  background-color: #f0f0f0;
+  background-color: #eaeaea;
 }
 
 .data__table td:first-child,

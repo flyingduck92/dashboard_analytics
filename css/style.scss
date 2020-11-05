@@ -533,8 +533,15 @@ input {
 		}
 	}
 
+	tr:nth-child(2n + 1) {
+		background-color: #f7f7f7;
+	}
+	tr:first-child {
+		background-color: #fff;
+	}
+
 	tr:not(:first-child):hover {
-		background-color: #f0f0f0;
+		background-color: #eaeaea;
 	}
 
 	td:first-child,
