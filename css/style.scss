@@ -106,6 +106,8 @@ body {
 
 .logo {
 	display: block;
+	width: 160px;
+	height: 60px;
 }
 
 .wrapper {
@@ -121,9 +123,9 @@ button {
 select,
 option,
 input {
-	font-family: Montserrat, sans-serif;
+	font-family: "Montserrat", sans-serif;
 	text-transform: uppercase;
-	background-color: #f0f0f0;
+	background-color: rgba(255, 255, 255, 0.8);
 	border: 0;
 	text-align: left;
 }
@@ -147,6 +149,7 @@ input {
 .sidebar__logo {
 	display: grid;
 	place-content: center;
+	// border: 1px solid red;
 }
 
 /** Nav Style**/
@@ -156,7 +159,7 @@ input {
 	font-weight: 500;
 	text-transform: uppercase;
 
-	height: 85%;
+	height: 90%;
 	// border-left: 1px solid red;
 
 	// display: grid;
@@ -172,14 +175,16 @@ input {
 	.nav__block {
 		display: flex;
 		flex-direction: column;
-		margin-top: 50%;
+		margin-top: 10%;
 
 		font-weight: 500;
 		cursor: pointer;
 
 		/* Sticky Navigation */
 		position: sticky;
-		top: 4em;
+		top: 3em;
+
+		// border: 1px solid red;
 	}
 
 	.nav__header {
@@ -237,7 +242,7 @@ input {
 .main__header__search,
 .main__header__user {
 	margin-right: 1.8em;
-	margin-bottom: 0.8em;
+	margin-bottom: 1em;
 }
 
 .main__header form {
@@ -247,6 +252,8 @@ input {
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
+
+	// border: 1px solid red;
 }
 
 .main__header__search,
@@ -257,6 +264,7 @@ input {
 .main__header__channel {
 	border: 1px solid #ccc;
 	border-radius: 100vh;
+	background-color: rgba(255, 255, 255, 0.8);
 
 	select {
 		width: 180px;
@@ -264,7 +272,6 @@ input {
 		border-radius: 100vh;
 		color: #666;
 		line-height: 22px;
-		background-color: transparent;
 
 		appearance: none;
 		-webkit-appearance: none;
@@ -284,6 +291,7 @@ input {
 	border: 1px solid #ccc;
 	border-radius: 100vh;
 	flex: 1;
+	background-color: rgba(255, 255, 255, 0.8);
 
 	.search__input,
 	.search__btn {
@@ -321,7 +329,7 @@ input {
 	display: flex;
 	gap: 1.8em;
 
-	// border: 1px solid blue;
+	// border: 1px solid red;
 	// flex-wrap: wrap;
 }
 
@@ -592,7 +600,6 @@ button.clear__btn {
 	line-height: 22px;
 	/* TRBL */
 	padding: 0.5em 30px 0.5em 20px;
-	margin-right: 10px;
 	font-weight: 500;
 	background-color: #562b77;
 	color: #fff;
