@@ -452,18 +452,36 @@ input {
 		flex: 1 1 48%;
 	}
 	.top__active,
-	.top__source {
+	.top__source,
+	.top__source__medium {
 		flex: 1 1 100%;
 	}
+
 	/* Keyword Page - Data Table  */
 	.top__keyword--full-page {
 		flex: 1 1 100%;
 	}
 
+	/* Overview & Detail Source Page */
 	.top__source {
-		/* Overview Page */
 		tr:not(:first-child) {
 			td:nth-child(2) a {
+				color: #562b77;
+				font-weight: 700;
+			}
+			td:nth-child(3) a {
+				pointer-events: none;
+			}
+		}
+	}
+
+	/* detail medium referral & detail medium social*/
+	.top__source__medium {
+		tr:not(:first-child) {
+			td:nth-child(2) a {
+				pointer-events: none;
+			}
+			td:nth-child(3) a {
 				color: #562b77;
 				font-weight: 700;
 			}
@@ -483,6 +501,11 @@ input {
 	font-size: 1.8em;
 	text-align: left;
 	text-transform: capitalize;
+
+	h1 {
+		font-weight: 700;
+		font-size: 1.5em;
+	}
 }
 .data__subtitle {
 	margin: 0.5em 0 1em;
