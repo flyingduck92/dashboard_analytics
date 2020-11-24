@@ -103,32 +103,50 @@ body {
 	border: 1px solid red;
 }
 
-.logo {
-	display: grid;
-	place-content: center;
-
-	& img {
-		display: block;
-		width: 100%;
-	}
-}
-
 .hamburger {
 	grid-area: ham;
 	text-align: left;
 	display: inline;
 }
 
+// Logo Style
 .logo {
 	grid-area: logo;
 	text-align: center;
+
+	display: grid;
+	place-content: center;
+	& img {
+		display: block;
+		width: 100%;
+	}
 }
 
-.user {
-	grid-area: user;
-	text-align: right;
+// Channel dropdown
+.channel {
+	grid-area: channel;
+
+	border: 1px solid #f7f7f7;
+	border-radius: 100vh;
+	background-color: #f6f7fb;
+
+	width: 100%;
+	padding: 0.9em;
+	line-height: 22px;
+
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+
+	background-image: url("../img/icons/dropdown.svg");
+	background-repeat: no-repeat;
+	background-size: 12px 12px;
+	background-position: right;
+	background-origin: content-box;
 }
 
+// Search Style
 .search {
 	grid-area: search;
 	display: flex;
@@ -154,27 +172,9 @@ body {
 	}
 }
 
-.channel {
-	grid-area: channel;
-
-	border: 1px solid #f7f7f7;
-	border-radius: 100vh;
-	background-color: #f6f7fb;
-
-	width: 100%;
-	padding: 0.9em;
-	line-height: 22px;
-
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-ms-appearance: none;
-
-	background-image: url("../img/icons/dropdown.svg");
-	background-repeat: no-repeat;
-	background-size: 12px 12px;
-	background-position: right;
-	background-origin: content-box;
+.user {
+	grid-area: user;
+	text-align: right;
 }
 
 select,
@@ -208,12 +208,18 @@ input {
 // content
 .content {
 	border: 1px solid red;
+
+	background-color: #f6f7fb;
+	border-radius: 2em;
+	padding: 2em;
 }
 
 .content__chart {
 	width: 259px;
 	height: 348px;
 	background: lightblue;
+
+	padding: 24px;
 }
 
 /* Desktop Layout */
@@ -255,41 +261,43 @@ input {
 	//.content - grid
 	.content {
 		flex: 1;
-		background-color: yellow;
 
 		display: grid;
 		grid-gap: 10px;
 		grid-template-areas:
-			"chart title title title"
-			"chart data data data";
+			"c t t t"
+			"c d d d";
 		max-width: 100%;
 		margin-left: auto;
 	}
 
 	.content__title {
-		grid-area: title;
+		grid-area: t;
 	}
 	.content__chart {
-		grid-area: chart;
+		grid-area: c;
 	}
 	.content__data {
-		grid-area: data;
+		grid-area: d;
+
+		display: grid;
+		grid-gap: 10px;
+		grid-template-areas:
+			"o o o o o o"
+			"m m m k k k"
+			"s s s s s s";
 	}
-
-	//   .content {
-	//       flex: 1;
-	//       background-color: yellow;
-
-	//       display: flex;
-	//       flex-direction: row;
-	//   }
-	//   .content__title {
-	//     order: 2;
-	//   }
-	//   .content__chart {
-	//     order: 1;
-	//   }
-	//   .content__data {
-	//     order 3;
-	//   }
+	.data__overview {
+		grid-area: o;
+	}
+	.data__medium {
+		grid-area: m;
+	}
+	.data__keyword {
+		grid-area: k;
+	}
+	.data__source {
+		grid-area: s;
+		width: 100%;
+	}
 }
