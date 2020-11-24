@@ -76,7 +76,7 @@ body {
 
 	// min-width wrapper
 	// = contentWidth + paddingLeft + paddingRight
-	min-width: calc(550px + 3em);
+	min-width: calc(500px + 7em);
 }
 
 /* Mobile Layout */
@@ -219,6 +219,7 @@ input {
 
 	display: flex;
 	flex-direction: column;
+	min-width: calc(500px + 4em);
 }
 
 .content__chart {
@@ -235,6 +236,7 @@ input {
 	place-items: center;
 
 	border: 1px solid red;
+	min-width: 500px;
 }
 
 article {
@@ -385,7 +387,7 @@ article {
 }
 
 // Desktop 1440px
-@media (min-width: 1440px) {
+@media (min-width: 1460px) {
 	//sidebar__nav
 	.sidebar__nav {
 		background-color: unset;
