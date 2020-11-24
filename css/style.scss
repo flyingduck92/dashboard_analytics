@@ -222,9 +222,9 @@ input {
 	padding: 24px;
 }
 
-/* Desktop Layout */
-/* Size note: 768px / 550px / 820px*/
-@media (min-width: 750px) {
+/* Tablet Layout 768px */
+/* Size note: / 550px / 820px*/
+@media (min-width: 768px) {
 	.wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -250,6 +250,54 @@ input {
 		text-align: left;
 	}
 
+	//.content - grid
+	.content {
+		flex: 1;
+
+		display: grid;
+		grid-gap: 10px;
+		grid-template-areas:
+			"t t t t"
+			"c c . ."
+			"c c . ."
+			"d d d d";
+		max-width: 100%;
+		margin-left: auto;
+	}
+
+	.content__title {
+		grid-area: t;
+	}
+	.content__chart {
+		grid-area: c;
+	}
+	.content__data {
+		grid-area: d;
+
+		display: grid;
+		grid-gap: 10px;
+		grid-template-areas:
+			"o o o o o o"
+			"m m m k k k"
+			"s s s s s s";
+	}
+	.data__overview {
+		grid-area: o;
+	}
+	.data__medium {
+		grid-area: m;
+	}
+	.data__keyword {
+		grid-area: k;
+	}
+	.data__source {
+		grid-area: s;
+		width: 100%;
+	}
+}
+
+//Desktop
+@media (min-width: 920px) {
 	//sidebar__nav
 	.sidebar__nav {
 		background-color: unset;
@@ -258,15 +306,14 @@ input {
 		flex: 0 auto;
 	}
 
-	//.content - grid
 	.content {
 		flex: 1;
 
 		display: grid;
 		grid-gap: 10px;
 		grid-template-areas:
-			"c t t t"
-			"c d d d";
+			"c c t t"
+			"c c d d";
 		max-width: 100%;
 		margin-left: auto;
 	}
