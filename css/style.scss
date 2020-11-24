@@ -23,11 +23,6 @@ a {
 	text-decoration: none;
 }
 
-a:focus-visible,
-button:focus-visible {
-	outline: 1px solid #ef672f;
-}
-
 h1,
 h2,
 h3,
@@ -134,6 +129,31 @@ body {
 	text-align: right;
 }
 
+.search {
+	grid-area: search;
+	display: flex;
+
+	border: 1px solid #f7f7f7;
+	border-radius: 100vh;
+	background-color: #f6f7fb;
+
+	.search__input,
+	.search__btn {
+		line-height: 25px;
+		padding: 0.8em 1em;
+		background-color: transparent;
+	}
+	.search__input {
+		flex: 1;
+		color: #666;
+		border-radius: 100vh 0 0 100vh;
+	}
+	.search__btn {
+		width: 60px;
+		border-radius: 0 100vh 100vh 0;
+	}
+}
+
 .channel {
 	grid-area: channel;
 
@@ -155,12 +175,6 @@ body {
 	background-size: 12px 12px;
 	background-position: right;
 	background-origin: content-box;
-}
-
-.search {
-	grid-area: search;
-
-	display: flex;
 }
 
 select,
