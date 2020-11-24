@@ -88,7 +88,7 @@ body {
       grid-template-columns: repeat(6, 1fr);
   grid-auto-rows: auto;
   grid-gap: 10px;
-      grid-template-areas: "ham . logo logo . user" "channel channel channel search search search";
+      grid-template-areas: "ham . logo logo . user" "channel channel search search search search";
 }
 
 .hamburger,
@@ -126,7 +126,7 @@ body {
 .channel {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: channel;
   border: 1px solid #f7f7f7;
   border-radius: 100vh;
@@ -147,8 +147,8 @@ body {
 
 .search {
   -ms-grid-row: 2;
-  -ms-grid-column: 4;
-  -ms-grid-column-span: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 4;
   grid-area: search;
   display: -webkit-box;
   display: -ms-flexbox;
