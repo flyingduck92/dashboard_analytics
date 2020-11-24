@@ -337,8 +337,8 @@ article {
   text-align: center;
 }
 
-/* Tablet Layout for Header 768px*/
-@media (min-width: 768px) {
+/* Tablet Layout for Header 920px*/
+@media (min-width: 920px) {
   .header__form {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;
