@@ -61,8 +61,8 @@ body {
 }
 
 .wrapper {
-  padding: 1em 1.5em;
   border: 1px solid blue;
+  padding: 1em 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +72,7 @@ body {
           flex-direction: column;
   gap: 1em;
   margin: 0 auto;
+  min-width: calc(550px + 3em);
 }
 
 /* Mobile Layout */
@@ -215,6 +216,13 @@ input {
   background-color: #f6f7fb;
   border-radius: 2em;
   padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .content__chart {
@@ -224,9 +232,111 @@ input {
   padding: 24px;
 }
 
-/* Tablet Layout 768px */
-/* Size note: / 550px / 820px*/
-@media (min-width: 768px) {
+/* Data Table Style START */
+.content__data {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border: 1px solid red;
+}
+
+article {
+  width: 100%;
+}
+
+/* Subtitle  */
+.data__subtitle {
+  margin: 0.5em 0;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Data Table  */
+.data__table {
+  border: 1px solid #111;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  width: 100%;
+  min-width: 460px;
+  padding: 5px 10px;
+}
+
+.table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 1em;
+  /* 
+		Line Clamps size 3 throw ellipsis when overflow
+		-- https://css-tricks.com/almanac/properties/l/line-clamp/
+	*/
+}
+
+.table td,
+.table th {
+  padding: 8px;
+}
+
+.table tr:not(:first-child):hover {
+  background-color: #eaeaea;
+}
+
+.table tr:nth-child(2n + 1) {
+  background-color: #f7f7f7;
+}
+
+.table td:nth-child(3) {
+  text-align: center;
+}
+
+.table tr:first-child {
+  border-bottom: 1px solid #111;
+  background-color: unset;
+  text-align: left;
+}
+
+.table tr:first-child th:nth-child(3) {
+  text-align: center;
+}
+
+.table .title a {
+  font-weight: 700;
+}
+
+.table td:nth-child(1) a,
+.table td:nth-child(2) a,
+.table td:nth-child(3) {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 25px;
+}
+
+.bottom__link a {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px;
+  border-top: 1px solid #111;
+}
+
+.bottom__link a:hover {
+  background-color: #eaeaea;
+}
+
+/* Data Table Style END */
+.data__medium th:nth-child(2),
+.data__medium td:nth-child(2),
+.data__keyword th:nth-child(2),
+.data__keyword td:nth-child(2) {
+  text-align: center;
+}
+
+/* Tablet Layout 1080px*/
+@media (min-width: 1080px) {
   .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -251,38 +361,10 @@ input {
     width: auto;
     text-align: left;
   }
-  .content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    display: -ms-grid;
-    display: grid;
-    grid-gap: 10px;
-        grid-template-areas: "t t t t" "c c . ." "c c . ." "d d d d";
-    max-width: 100%;
-    margin-left: auto;
-  }
-  .content__title {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: t;
-  }
-  .content__chart {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-area: c;
-  }
   .content__data {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 4;
-    grid-area: d;
     display: -ms-grid;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 1em;
         grid-template-areas: "o o o o o o" "m m m k k k" "s s s s s s";
   }
   .data__overview {
@@ -312,7 +394,7 @@ input {
   }
 }
 
-@media (min-width: 920px) {
+@media (min-width: 1440px) {
   .sidebar__nav {
     background-color: unset;
     position: unset;
@@ -326,7 +408,7 @@ input {
             flex: 1;
     display: -ms-grid;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 1em;
         grid-template-areas: "c c t t" "c c d d";
     max-width: 100%;
     margin-left: auto;
@@ -349,9 +431,11 @@ input {
     -ms-grid-column: 3;
     -ms-grid-column-span: 2;
     grid-area: d;
+  }
+  .content__data {
     display: -ms-grid;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 1em;
         grid-template-areas: "o o o o o o" "m m m k k k" "s s s s s s";
   }
   .data__overview {
