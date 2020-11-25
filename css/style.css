@@ -238,6 +238,7 @@ body {
 
 .user__name {
   white-space: nowrap;
+  display: none;
 }
 
 .user__dropdown {
@@ -246,26 +247,37 @@ body {
 
 .user__block {
   position: absolute;
-  bottom: -170%;
+  top: 100%;
   right: 0;
-  background-color: #f6f7fb;
-  -webkit-box-shadow: 0 2px 2px 2px rgba(102, 102, 102, 0.2);
-          box-shadow: 0 2px 2px 2px rgba(102, 102, 102, 0.2);
-  padding: 10px 10px;
-  width: 200%;
-  border-radius: 15px;
-  display: none;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
 }
 
 .user__block a {
   display: block;
   white-space: nowrap;
   text-align: right;
+  text-transform: uppercase;
   padding: 10px;
+  border-bottom: 1px solid #575766;
 }
 
 .user__block a:hover {
   border-right: 8px solid #3ea6dd;
+}
+
+.user__block--open {
+  height: auto;
+  background-color: #f6f7fb;
+  -webkit-box-shadow: 0 2px 2px 2px rgba(102, 102, 102, 0.2);
+          box-shadow: 0 2px 2px 2px rgba(102, 102, 102, 0.2);
+  padding: 10px 10px;
+  width: 150%;
+  border-radius: 15px;
 }
 
 .user__icon,
@@ -277,8 +289,6 @@ body {
 .sidebar__nav {
   border: 1px solid red;
   position: fixed;
-  top: 0;
-  left: 0;
   background-color: #fff;
   opacity: 0.85;
 }
