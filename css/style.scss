@@ -140,8 +140,7 @@ body {
 
 // hamburger style
 .hamburger {
-	text-align: left;
-	display: inline;
+	width: 100%;
 }
 
 // Logo Style
@@ -243,16 +242,15 @@ body {
 	// hide user__block
 	height: 0;
 	overflow: hidden;
-	transition: all 350ms ease-in-out;
-	transform-origin: top center;
 }
 .user__block--open {
 	height: auto;
 	background-color: #f6f7fb;
 	box-shadow: 0 2px 2px 2px rgba(102, 102, 102, 0.2);
 	padding: 10px 10px;
-	width: 150%;
+	width: 180px;
 	border-radius: 15px;
+	transition: height 2s ease-out;
 }
 
 .user__icon,
@@ -268,7 +266,7 @@ body {
 	// inset: 0;
 
 	background-color: #fff;
-	opacity: 0.85;
+	// opacity: 0;
 }
 
 // Content Style
