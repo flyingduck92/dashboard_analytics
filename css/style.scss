@@ -57,13 +57,14 @@ input {
 
 /* SVG's */
 .search__btn svg {
-	width: 16px;
+	width: 100%;
 	height: 16px;
 	background: none;
 }
 
 .user__icon svg {
-	width: 16px;
+	// width: 100%;
+	width: 20px;
 	height: 20px;
 	display: block;
 }
@@ -205,9 +206,51 @@ body {
 
 // User Style
 .user {
-	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+}
+.user__icon svg {
+	justify-content: flex-end;
+}
+.user__name {
+	white-space: nowrap;
+}
+.user__dropdown {
+	// margin-left: auto;
+	display: none;
+}
+.user__block {
+	position: absolute;
+	bottom: -170%;
+	right: 0;
+	background-color: #f6f7fb;
+	box-shadow: 0 2px 2px 2px rgba(102, 102, 102, 0.2);
+	padding: 10px 10px;
+	width: 200%;
+	border-radius: 15px;
+
+	a {
+		display: block;
+		white-space: nowrap;
+		text-align: right;
+		padding: 10px;
+	}
+	a:hover {
+		border-right: 8px solid #3ea6dd;
+	}
+
+	display: none;
 }
 
+.user__icon,
+.user__name,
+.user__dropdown {
+	border: 1px solid blue;
+}
 // sidebar__nav
 .sidebar__nav {
 	border: 1px solid red;
