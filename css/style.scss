@@ -223,8 +223,11 @@ input {
 }
 
 .content__chart {
-	width: 259px;
+	width: 100%;
 	height: 348px;
+
+	max-width: 259px;
+
 	background: lightblue;
 
 	padding: 24px;
@@ -258,8 +261,9 @@ article {
 	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 8px;
 	width: 100%;
-	min-width: 460px;
 	padding: 5px 10px;
+
+	// min-width: 460px;
 }
 
 .table {
@@ -336,8 +340,16 @@ article {
 	}
 }
 
-/* Tablet Layout for Header 920px*/
-@media (min-width: 920px) {
+/* Tablet Layout 768px - Snapped Header Only */
+@media (min-width: 768px) {
+	.wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		//set max width of body
+		// max-width: 1440px;
+	}
+
 	// header
 	.header__form {
 		flex: 1 0 100%;
@@ -356,14 +368,44 @@ article {
 	}
 }
 
-/* Tablet Layout 1080px*/
-@media (min-width: 1080px) {
+/* Desktop Layout 1024px - Snapped Nav and contents*/
+@media (min-width: 1024px) {
 	.wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
 
 		//set max width of body
 		// max-width: 1440px;
+	}
+
+	//sidebar__nav
+	.sidebar__nav {
+		background-color: unset;
+		position: unset;
+
+		flex: 0 auto;
+	}
+
+	.content {
+		flex: 1;
+
+		display: grid;
+		grid-gap: 1.5em;
+		grid-template-areas:
+			"c c t t"
+			"c c d d";
+		max-width: 100%;
+		margin-left: auto;
+	}
+
+	.content__title {
+		grid-area: t;
+	}
+	.content__chart {
+		grid-area: c;
+	}
+	.content__data {
+		grid-area: d;
 	}
 
 	.content__data {
@@ -389,35 +431,35 @@ article {
 	}
 }
 
-// Desktop 1480px
-@media (min-width: 1480px) {
-	//sidebar__nav
-	.sidebar__nav {
-		background-color: unset;
-		position: unset;
+// Desktop 1280px
+// @media (min-width: 1280px) {
+// 	//sidebar__nav
+// 	.sidebar__nav {
+// 		background-color: unset;
+// 		position: unset;
 
-		flex: 0 auto;
-	}
+// 		flex: 0 auto;
+// 	}
 
-	.content {
-		flex: 1;
+// 	.content {
+// 		flex: 1;
 
-		display: grid;
-		grid-gap: 1em;
-		grid-template-areas:
-			"c c t t"
-			"c c d d";
-		max-width: 100%;
-		margin-left: auto;
-	}
+// 		display: grid;
+// 		grid-gap: 1.5em;
+// 		grid-template-areas:
+// 			"c c t t"
+// 			"c c d d";
+// 		max-width: 100%;
+// 		margin-left: auto;
+// 	}
 
-	.content__title {
-		grid-area: t;
-	}
-	.content__chart {
-		grid-area: c;
-	}
-	.content__data {
-		grid-area: d;
-	}
-}
+// 	.content__title {
+// 		grid-area: t;
+// 	}
+// 	.content__chart {
+// 		grid-area: c;
+// 	}
+// 	.content__data {
+// 		grid-area: d;
+// 	}
+// }
