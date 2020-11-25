@@ -230,6 +230,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 1.25em;
+
+	// minWidth content
 	min-width: calc(500px + 4em);
 }
 
