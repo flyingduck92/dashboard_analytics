@@ -223,15 +223,17 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 1.25em;
   min-width: calc(500px + 4em);
 }
 
 .content__chart {
   width: 100%;
   height: 348px;
-  max-width: 259px;
   background: lightblue;
+  margin: 0 auto;
   padding: 24px;
+  max-width: 633px;
 }
 
 /* Data Table Style START */
@@ -239,6 +241,7 @@ input {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  grid-gap: 1em;
   border: 1px solid red;
   min-width: 500px;
 }
@@ -415,7 +418,7 @@ article {
   .content__data {
     display: -ms-grid;
     display: grid;
-    grid-gap: 2em;
+    grid-gap: 1.5em;
         grid-template-areas: "o o o o o o" "m m m k k k" "s s s s s s";
   }
   .data__overview {
