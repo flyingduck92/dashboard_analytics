@@ -324,7 +324,7 @@ body {
 }
 
 .cross:hover p {
-	animation: spin 500ms linear;
+	animation: spin 350ms linear;
 }
 
 @keyframes spin {
@@ -345,7 +345,9 @@ body {
 		display: flex;
 		align-items: center;
 
-		:nth-child(2),
+		:nth-child(2) {
+			margin-left: 0.5em;
+		}
 		:last-child {
 			margin-left: auto;
 		}
