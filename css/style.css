@@ -315,6 +315,76 @@ body {
 
 .sidebar__nav {
   border: 1px solid red;
+  position: fixed;
+  inset: 0;
+  background-color: #fff;
+  font-size: 1.5rem;
+  opacity: 0.8;
+}
+
+.sidebar__nav > * {
+  border: 1px solid blue;
+}
+
+.nav__close {
+  background-color: #e5e5e5;
+  padding: 1rem 1.5rem;
+}
+
+.cross {
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.cross:hover p {
+  -webkit-animation: spin 500ms linear;
+          animation: spin 500ms linear;
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+.nav {
+  padding: 1rem 1.5rem;
+}
+
+.nav .nav__head {
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav .nav__head :nth-child(2),
+.nav .nav__head :last-child {
+  margin-left: auto;
 }
 
 .content {
@@ -500,7 +570,7 @@ article {
         grid-template-areas: "logo . channel channel search search search search search search search user";
   }
   .hamburger,
-  .cross {
+  .nav__close {
     display: none;
   }
   .user {
