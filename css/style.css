@@ -369,10 +369,14 @@ body {
 }
 
 .nav {
-  padding: 1rem 1.5rem;
+  min-width: 290px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #007cbd;
 }
 
 .nav .nav__head {
+  padding: 1rem 0.5rem;
   border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +392,19 @@ body {
 
 .nav .nav__head :last-child {
   margin-left: auto;
+}
+
+.nav .nav__items li {
+  padding: 0.5rem 3rem;
+  text-align: left;
+}
+
+.nav .nav__items li a {
+  color: #007cbd;
+}
+
+.nav .nav__items li.active {
+  border-left: 10px solid #007cbd;
 }
 
 .content {
