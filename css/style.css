@@ -560,6 +560,7 @@ article {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 1.5em;
   }
   .header__form {
     -webkit-box-flex: 1;
@@ -580,9 +581,7 @@ article {
   .sidebar__nav {
     background-color: unset;
     position: unset;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    min-width: 245px;
   }
   .content {
     -webkit-box-flex: 1;

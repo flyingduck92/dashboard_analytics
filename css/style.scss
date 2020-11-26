@@ -519,6 +519,7 @@ article {
 	.wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
+		gap: 1.5em;
 
 		//set max width of body
 		// max-width: 1440px;
@@ -546,7 +547,8 @@ article {
 		background-color: unset;
 		position: unset;
 
-		flex: 0 0 auto;
+		// min-width of navigation
+		min-width: 245px;
 	}
 
 	// Content Style - Desktop
@@ -581,7 +583,8 @@ article {
 		margin: 0 auto;
 		padding: 24px;
 
-		// max width on mobile viewport
+		// max and min width on desktop viewport
+		// min-width: 260px;
 		max-width: 633px;
 	}
 
