@@ -290,7 +290,7 @@ body {
 	border: 1px solid blue;
 }
 
-// Sidebar__nav
+// Sidebar Nav Block
 .sidebar__nav {
 	border: 1px solid red;
 
@@ -307,6 +307,7 @@ body {
 	}
 }
 
+// Navigation Close
 .nav__close {
 	background-color: #e5e5e5;
 	padding: 1rem 1.5rem;
@@ -335,6 +336,7 @@ body {
 	}
 }
 
+// Navigation Header and Items
 .nav {
 	padding: 1rem 1.5rem;
 
@@ -544,10 +546,80 @@ article {
 		background-color: unset;
 		position: unset;
 
-		flex: 0 auto;
+		flex: 0 0 auto;
 	}
 
 	// Content Style - Desktop
+	.content {
+		flex: 1;
+
+		display: grid;
+		grid-gap: 1.5em;
+		grid-template-areas:
+			"c c t t"
+			"c c . ."
+			"d d d d";
+		// max-width: 100%;
+		// margin-left: auto;
+	}
+
+	.content__title {
+		grid-area: t;
+	}
+	.content__chart {
+		grid-area: c;
+	}
+	.content__data {
+		grid-area: d;
+	}
+
+	// Content Chart Style
+	.content__chart {
+		width: 100%;
+		height: 348px;
+		background: lightblue;
+		margin: 0 auto;
+		padding: 24px;
+
+		// max width on mobile viewport
+		max-width: 633px;
+	}
+
+	// Content Data Style - Desktop
+	.content__data {
+		display: grid;
+		grid-gap: 1.5em;
+		grid-template-areas:
+			"o o o o o o"
+			"m m m m m m"
+			"k k k k k k"
+			"s s s s s s";
+	}
+	.data__overview {
+		grid-area: o;
+	}
+	.data__medium {
+		grid-area: m;
+	}
+	.data__keyword {
+		grid-area: k;
+	}
+	.data__source {
+		grid-area: s;
+		width: 100%;
+	}
+}
+
+// Desktop 1224px
+@media (min-width: 1224px) {
+	//sidebar__nav
+	.sidebar__nav {
+		background-color: unset;
+		position: unset;
+
+		flex: 0 auto;
+	}
+
 	.content {
 		flex: 1;
 
@@ -593,36 +665,3 @@ article {
 		width: 100%;
 	}
 }
-
-// Desktop 1280px
-// @media (min-width: 1280px) {
-// 	//sidebar__nav
-// 	.sidebar__nav {
-// 		background-color: unset;
-// 		position: unset;
-
-// 		flex: 0 auto;
-// 	}
-
-// 	.content {
-// 		flex: 1;
-
-// 		display: grid;
-// 		grid-gap: 1.5em;
-// 		grid-template-areas:
-// 			"c c t t"
-// 			"c c d d";
-// 		max-width: 100%;
-// 		margin-left: auto;
-// 	}
-
-// 	.content__title {
-// 		grid-area: t;
-// 	}
-// 	.content__chart {
-// 		grid-area: c;
-// 	}
-// 	.content__data {
-// 		grid-area: d;
-// 	}
-// }
