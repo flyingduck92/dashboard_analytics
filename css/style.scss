@@ -239,6 +239,10 @@ body {
 	justify-content: center;
 	align-items: center;
 
+	// disable highlight on navigation
+	user-select: none;
+	cursor: pointer;
+
 	position: relative;
 }
 
@@ -270,7 +274,7 @@ body {
 	}
 
 	// hide user__block
-	transform: translateX(100%);
+	transform: translateX(50%);
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.3s;
@@ -372,22 +376,31 @@ body {
 	}
 
 	.nav__items {
-		display: none;
+		// Hide nav__items
+		height: auto;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease-out;
+
 		li {
 			padding: 1rem 3.5rem;
 			text-align: left;
 			box-shadow: 0 1px 1px 1px rgba(0, 124, 189, 0.2);
+			line-height: 22px;
 			a {
 				color: #007cbd;
 			}
 		}
 		li.active {
-			border-left: 15px solid #007cbd;
+			border-left: 10px solid #007cbd;
+			background-color: #e3f5fe;
 		}
 	}
 
 	.item--open {
-		display: block;
+		// show nav__items
+		max-height: 1000px;
+		transition: max-height 0.3s ease-in;
 	}
 }
 
