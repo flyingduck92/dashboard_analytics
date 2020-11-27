@@ -10,7 +10,7 @@
 		<div class="wrapper">
 			<header>
 				<form action="" class="header__form">
-					<div class="hamburger" id="hamburger">
+					<div class="hamburger" id="open-nav">
 						<svg>
 							<path
 								fill-rule="evenodd"
@@ -90,14 +90,14 @@
 				</form>
 			</header>
 
-			<nav class="sidebar__nav">
-				<div class="nav__close">
+			<nav class="sidebar__nav" id="nav">
+				<div class="nav__close" id="close-nav">
 					<div class="cross">
 						<p>&#10761;</p>
 					</div>
 				</div>
 				<ul class="nav">
-					<li class="nav__head" id="realtime_head">
+					<li class="nav__head" id="realtime-head">
 						<svg class="clock">
 							<g clip-path="url(#clip0)">
 								<path
@@ -129,7 +129,7 @@
 							/>
 						</svg>
 					</li>
-					<ul class="nav__items" id="realtime__items">
+					<ul class="nav__items item--open" id="realtime-item">
 						<li class="nav__item active">
 							<a href="">Overview</a>
 						</li>

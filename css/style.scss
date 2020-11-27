@@ -170,6 +170,7 @@ body {
 	align-content: center;
 
 	padding-left: 0.9em;
+	cursor: pointer;
 }
 
 // Logo Style
@@ -240,9 +241,7 @@ body {
 
 	position: relative;
 }
-// .user__icon svg {
-// justify-content: flex-end;
-// }
+
 .user__name {
 	white-space: nowrap;
 }
@@ -300,17 +299,23 @@ body {
 
 	font-size: 1.5rem;
 
-	opacity: 0.8;
+	// hide navigation on mobile viewport
+	transform: translateX(-70%);
+	opacity: 0;
+	visibility: hidden;
+}
 
-	// > * {
-	// 	border: 1px solid blue;
-	// }
+.sidebar__nav--open {
+	visibility: unset;
+	transform: translateX(0);
+	opacity: 1;
 }
 
 // Navigation Close
 .nav__close {
 	background-color: #e5e5e5;
 	padding: 1rem 1.5rem;
+	cursor: pointer;
 }
 
 .cross {
@@ -341,10 +346,14 @@ body {
 	min-width: 290px;
 	font-size: 1rem;
 	font-weight: 700;
+	cursor: pointer;
+
+	// disable highlight on navigation
+	user-select: none;
 
 	.nav__head {
+		border-bottom: 1px solid #111;
 		padding: 1rem;
-		border: 1px solid red;
 		display: flex;
 		align-items: center;
 
@@ -357,16 +366,22 @@ body {
 	}
 
 	.nav__items {
+		display: none;
 		li {
-			padding: 1rem 4rem;
+			padding: 1rem 3.5rem;
 			text-align: left;
+			border-bottom: 1px solid #007cbd;
 			a {
 				color: #007cbd;
 			}
 		}
 		li.active {
-			border-left: 8px solid #007cbd;
+			border-left: 15px solid #007cbd;
 		}
+	}
+
+	.item--open {
+		display: block;
 	}
 }
 
@@ -567,6 +582,11 @@ article {
 
 		// min-width of navigation
 		min-width: 245px;
+
+		// Show Navigation on Desktop viewport
+		visibility: unset;
+		transform: translateX(0);
+		opacity: 1;
 	}
 
 	// Content Style - Desktop
