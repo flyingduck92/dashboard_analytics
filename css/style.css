@@ -384,8 +384,6 @@ body {
 }
 
 .nav .nav__head {
-  -webkit-box-shadow: 0 1px 1px 1px rgba(17, 17, 17, 0.2);
-          box-shadow: 0 1px 1px 1px rgba(17, 17, 17, 0.2);
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
