@@ -107,7 +107,6 @@ body {
 }
 
 .wrapper {
-  border: 1px solid blue;
   padding: 1em 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -168,14 +167,6 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 4;
   grid-area: search;
-}
-
-.hamburger,
-.user,
-.search,
-.channel,
-.logo {
-  border: 1px solid red;
 }
 
 .hamburger {
@@ -276,8 +267,12 @@ body {
   position: absolute;
   top: 100%;
   right: 0;
-  height: 0;
-  overflow: hidden;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .user__block a + a {
@@ -297,25 +292,19 @@ body {
 }
 
 .user__block--open {
-  height: auto;
   background-color: #f6f7fb;
   -webkit-box-shadow: 0 2px 2px 2px rgba(102, 102, 102, 0.2);
           box-shadow: 0 2px 2px 2px rgba(102, 102, 102, 0.2);
   padding: 10px 10px;
   width: 180px;
   border-radius: 15px;
-  -webkit-transition: height 2s ease-out;
-  transition: height 2s ease-out;
-}
-
-.user__icon,
-.user__name,
-.user__dropdown {
-  border: 1px solid blue;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  visibility: unset;
+  opacity: 1;
 }
 
 .sidebar__nav {
-  border: 1px solid red;
   position: fixed;
   inset: 0;
   background-color: #fff;
@@ -324,6 +313,8 @@ body {
           transform: translateX(-70%);
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .sidebar__nav--open {
@@ -388,7 +379,8 @@ body {
 }
 
 .nav .nav__head {
-  border-bottom: 1px solid #111;
+  -webkit-box-shadow: 0 1px 1px 1px rgba(17, 17, 17, 0.2);
+          box-shadow: 0 1px 1px 1px rgba(17, 17, 17, 0.2);
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,7 +405,8 @@ body {
 .nav .nav__items li {
   padding: 1rem 3.5rem;
   text-align: left;
-  border-bottom: 1px solid #007cbd;
+  -webkit-box-shadow: 0 1px 1px 1px rgba(0, 124, 189, 0.2);
+          box-shadow: 0 1px 1px 1px rgba(0, 124, 189, 0.2);
 }
 
 .nav .nav__items li a {
@@ -429,7 +422,6 @@ body {
 }
 
 .content {
-  border: 1px solid red;
   background-color: #f6f7fb;
   border-radius: 2em;
   padding: 2em;
@@ -459,7 +451,6 @@ body {
   display: grid;
   place-items: center;
   grid-gap: 1em;
-  border: 1px solid red;
   min-width: 500px;
 }
 
