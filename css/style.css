@@ -414,8 +414,6 @@ body {
 .nav .nav__items li {
   padding: 1rem 3.5rem;
   text-align: left;
-  -webkit-box-shadow: 0 1px 1px 1px rgba(0, 124, 189, 0.2);
-          box-shadow: 0 1px 1px 1px rgba(0, 124, 189, 0.2);
   line-height: 22px;
 }
 
@@ -428,8 +426,12 @@ body {
   background-color: #e3f5fe;
 }
 
+.nav .nav__items li:hover {
+  background-color: #e3f5fe;
+}
+
 .nav .item--open {
-  max-height: 1000px;
+  max-height: 500px;
   -webkit-transition: max-height 0.3s ease-in;
   transition: max-height 0.3s ease-in;
 }

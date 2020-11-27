@@ -385,7 +385,6 @@ body {
 		li {
 			padding: 1rem 3.5rem;
 			text-align: left;
-			box-shadow: 0 1px 1px 1px rgba(0, 124, 189, 0.2);
 			line-height: 22px;
 			a {
 				color: #007cbd;
@@ -395,11 +394,14 @@ body {
 			border-left: 10px solid #007cbd;
 			background-color: #e3f5fe;
 		}
+		li:hover {
+			background-color: #e3f5fe;
+		}
 	}
 
 	.item--open {
 		// show nav__items
-		max-height: 1000px;
+		max-height: 500px;
 		transition: max-height 0.3s ease-in;
 	}
 }
