@@ -377,6 +377,7 @@ body {
 
 	.nav__items {
 		// Hide nav__items
+		// -- https://css-tricks.com/using-css-transitions-auto-dimensions/
 		height: auto;
 		max-height: 0;
 		overflow: hidden;
