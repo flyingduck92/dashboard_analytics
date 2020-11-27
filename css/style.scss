@@ -365,6 +365,7 @@ body {
 		padding: 1rem;
 		display: flex;
 		align-items: center;
+		border-bottom: 1px solid #ddd;
 
 		:nth-child(2) {
 			margin-left: 0.5em;
@@ -383,6 +384,7 @@ body {
 		transition: max-height 0.3s ease-out;
 
 		li {
+			border-bottom: 1px solid #c3e3f5;
 			padding: 1rem 3.5rem;
 			text-align: left;
 			line-height: 22px;
