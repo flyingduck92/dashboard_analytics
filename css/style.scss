@@ -424,6 +424,15 @@ body {
 	min-width: calc(500px + 4em);
 }
 
+// Content Title
+.content__title h1 {
+	font-size: 32px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #2c5498;
+	line-height: 25px;
+}
+
 // Content Chart Style
 .content__chart {
 	margin: 0 auto;
@@ -438,6 +447,7 @@ body {
 	background-color: #fff;
 	padding: 24px;
 	border-radius: 20px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 }
 
 #myChart {
@@ -521,19 +531,20 @@ article {
 /* Subtitle  */
 .data__subtitle {
 	margin: 0.5em 0;
-	font-size: 23px;
+	font-size: 24px;
 	font-weight: 700;
+	color: #007cbd;
 	text-transform: uppercase;
 }
 
 /* Data Table  */
 .data__table {
-	border: 1px solid #111;
+	border: 1px solid #f7f7f7;
 	background-color: rgba(255, 255, 255, 0.8);
-	border-radius: 8px;
+	border-radius: 1em;
 	width: 100%;
 	padding: 5px 10px;
-
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 	// min-width: 460px;
 }
 
@@ -561,7 +572,7 @@ article {
 	}
 
 	tr:first-child {
-		border-bottom: 1px solid #111;
+		border-bottom: 1px solid #e6e6e6;
 		background-color: unset;
 		text-align: left;
 
@@ -588,6 +599,9 @@ article {
 
 		line-height: 25px;
 	}
+	td:nth-child(1) a {
+		color: #007cbd;
+	}
 }
 
 .bottom__link a {
@@ -596,11 +610,21 @@ article {
 	font-weight: 700;
 	text-transform: uppercase;
 	padding: 8px;
-	border-top: 1px solid #111;
+	border-top: 1px solid #e6e6e6;
+	color: #007cbd;
+
+	span {
+		transition: padding-left 0.5s ease;
+	}
 }
+
 .bottom__link a:hover {
 	background-color: #eaeaea;
+	span {
+		padding-left: 8px;
+	}
 }
+
 /* Data Table Style END */
 
 .data__medium,
@@ -742,7 +766,6 @@ article {
 
 		display: grid;
 		grid-gap: 1.5em;
-		grid-template-columns: repeat(6, 1fr);
 		grid-template-areas:
 			"c t t t t t"
 			"c d d d d d";
