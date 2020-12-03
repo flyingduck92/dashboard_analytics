@@ -759,27 +759,4 @@ article {
 	.content__data {
 		grid-area: d;
 	}
-
-	// Content Data Style - Desktop
-	.content__data {
-		display: grid;
-		grid-gap: 1.5em;
-		grid-template-areas:
-			"o o o o o o"
-			"m m m k k k"
-			"s s s s s s";
-	}
-	.data__overview {
-		grid-area: o;
-	}
-	.data__medium {
-		grid-area: m;
-	}
-	.data__keyword {
-		grid-area: k;
-	}
-	.data__source {
-		grid-area: s;
-		width: 100%;
-	}
 }
