@@ -146,7 +146,37 @@
 				</div>
 
 				<div class="content__chart">
-					<h1>Pie-chart</h1>
+					<div class="chart__block">
+						<div class="counter__block">
+							<p class="counterTotal" id="counterTotal"></p>
+							<p class="activeUser">active user</p>
+							<p class="lastFiveMins">dalam 30 menit terakhir</p>
+						</div>
+
+						<canvas id="myChart"></canvas>
+
+						<div class="legend">
+							<div class="legend__item">
+								<div
+									class="legend__percentage"
+									id="percentage_mobile"
+								></div>
+								<span class="circle" id="circle__mobile"></span>
+								<p class="legend__text">mobile</p>
+							</div>
+							<div class="legend__item">
+								<div
+									class="legend__percentage"
+									id="percentage_desktop"
+								></div>
+								<span
+									class="circle"
+									id="circle__desktop"
+								></span>
+								<p class="legend__text">desktop</p>
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class="content__data">
@@ -498,6 +528,7 @@
 			</main>
 		</div>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 		<script src="js/index.js"></script>
 	</body>
 </html>
