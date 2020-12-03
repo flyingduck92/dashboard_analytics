@@ -444,6 +444,7 @@ body {
 }
 
 .chart__block {
+	color: #666;
 	background-color: #fff;
 	padding: 24px;
 	border-radius: 20px;
@@ -557,6 +558,7 @@ article {
 	td,
 	th {
 		padding: 8px;
+		color: #333333;
 	}
 
 	tr:not(:first-child):hover {
@@ -581,10 +583,6 @@ article {
 		}
 	}
 
-	.title a {
-		font-weight: 700;
-	}
-
 	/* 
 		Line Clamps size 3 throw ellipsis when overflow
 		-- https://css-tricks.com/almanac/properties/l/line-clamp/
@@ -599,7 +597,17 @@ article {
 
 		line-height: 25px;
 	}
-	td:nth-child(1) a {
+
+	.title a {
+		font-weight: 700;
+		color: #007cbd;
+	}
+	.source__title a {
+		font-weight: 400;
+		color: #666;
+	}
+	.source__link a {
+		font-weight: 700;
 		color: #007cbd;
 	}
 }
@@ -661,8 +669,8 @@ article {
 	}
 }
 
-/* Desktop Layout 1100px - Snap Header, Nav and Contents*/
-@media (min-width: 1100px) {
+/* Desktop Layout 1160px - Snap Header, Nav and Contents*/
+@media (min-width: 1160px) {
 	.wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;
