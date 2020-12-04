@@ -33,26 +33,33 @@ closeNav.addEventListener('click', function () {
 
 /* Chart.JS */
 // Fake Data - Total 46946
-var dataset = [
+let dataset = [
     { label: "Mobile", count: 18778, color: "#72bbe1" },
     { label: "Desktop", count: 28168, color: "#3ea6dd" }
 ];
 
-var dataTotal = dataset.reduce((acc, data) => (acc += data.count), 0);
-var mobileCalculate = (dataset[0].count / dataTotal) * 100;
-var desktopCalculate = (dataset[1].count / dataTotal) * 100;
-var mobilePercentage = `${mobileCalculate.toFixed(1)}%`;
-var desktopPercentage = `${desktopCalculate.toFixed(1)}%`;
+const dataTotal = dataset.reduce((acc, data) => (acc += data.count), 0);
+const mobileCalculate = (dataset[0].count / dataTotal) * 100;
+const desktopCalculate = (dataset[1].count / dataTotal) * 100;
+const mobilePercentage = `${mobileCalculate.toFixed(1)}%`;
+const desktopPercentage = `${desktopCalculate.toFixed(1)}%`;
 
 // Top Counter
-var counter = document.getElementById("counterTotal");
-counter.innerHTML = `${dataTotal}`;
+const total = get("counterTotal");
+total.innerHTML = `${dataTotal}`;
 // Percentage Mobile
-var counter = document.getElementById("percentage_mobile");
-counter.innerHTML = mobilePercentage;
+const percentageMobile = get("percentage_mobile");
+percentageMobile.innerHTML = mobilePercentage;
 // Percentage Desktop
-var counter = document.getElementById("percentage_desktop");
-counter.innerHTML = desktopPercentage;
+const percentageDesktop = get("percentage_desktop");
+percentageDesktop.innerHTML = desktopPercentage;
+// Legend Mobile
+const legendCircleMobile = get("circle__mobile");
+legendCircleMobile.style.backgroundColor = dataset[0].color;
+// Legend Desktop
+const legendCircleDesktop = get("circle__desktop");
+legendCircleDesktop.style.backgroundColor = dataset[1].color;
+
 
 // Chart JS Initialize
 var ctx = document.getElementById("myChart").getContext("2d");

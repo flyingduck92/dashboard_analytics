@@ -543,14 +543,6 @@ body {
   text-align: left;
 }
 
-#circle__mobile {
-  background: #72bbe1;
-}
-
-#circle__desktop {
-  background: #3ea6dd;
-}
-
 /* Data Table Style START */
 .content__data {
   display: -ms-grid;
