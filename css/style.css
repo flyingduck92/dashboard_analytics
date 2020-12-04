@@ -191,6 +191,7 @@ body {
 }
 
 .channel {
+  color: #666;
   border: 1px solid #f7f7f7;
   border-radius: 100vh;
   background-color: #f6f7fb;
@@ -260,6 +261,7 @@ body {
 }
 
 .user__name {
+  color: #666;
   white-space: nowrap;
 }
 
@@ -386,6 +388,7 @@ body {
 }
 
 .nav .nav__head {
+  color: #666;
   padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -590,7 +593,7 @@ article {
 .table td,
 .table th {
   padding: 8px;
-  color: #333333;
+  color: #333;
 }
 
 .table tr:not(:first-child):hover {

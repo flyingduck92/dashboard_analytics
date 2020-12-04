@@ -1,5 +1,12 @@
+// Custom Functions
 const get = id => document.getElementById(id);
+const setBgColour = (element, val) => element.style.backgroundColor = val;
+const setText = (element, val) => element.innerHTML = val;
+const toggleOnClick = (clickElement, openElement, className) => {
+    return clickElement.addEventListener('click', () => openElement.classList.toggle(className));
+}
 
+// Get Elements by ID
 const user = get('user');
 const userBlock = get('user__block');
 
@@ -10,26 +17,13 @@ const nav = get('nav');
 const openNav = get('open-nav');
 const closeNav = get('close-nav');
 
-// User Toggle
-user.addEventListener('click', function () {
-    userBlock.classList.toggle('user__block--open');
-});
-
-// Menu Item Toggle
-realTime.addEventListener('click', function () {
-    realTimeItem.classList.toggle('item--open');
-});
-
-// Navigation Toggle
-openNav.addEventListener('click', function () {
-    nav.classList.add('sidebar__nav--open');
-});
-closeNav.addEventListener('click', function () {
-    nav.classList.remove('sidebar__nav--open');
-});
-
-
-
+// User Toggle 
+toggleOnClick(user, userBlock, 'user__block--open')
+// Menu Item Toggle 
+toggleOnClick(realTime, realTimeItem, 'item--open')
+// Navigation Toggle 
+toggleOnClick(openNav, nav, 'sidebar__nav--open')
+toggleOnClick(closeNav, nav, 'sidebar__nav--open')
 
 /* Chart.JS */
 // Fake Data - Total 46946
@@ -38,7 +32,7 @@ let dataset = [
     { label: "Desktop", count: 28168, color: "#3ea6dd" }
 ];
 
-const dataTotal = dataset.reduce((acc, data) => (acc += data.count), 0);
+const dataTotal = `${dataset.reduce((acc, data) => (acc += data.count), 0)}`;
 const mobileCalculate = (dataset[0].count / dataTotal) * 100;
 const desktopCalculate = (dataset[1].count / dataTotal) * 100;
 const mobilePercentage = `${mobileCalculate.toFixed(1)}%`;
@@ -46,23 +40,22 @@ const desktopPercentage = `${desktopCalculate.toFixed(1)}%`;
 
 // Top Counter
 const total = get("counterTotal");
-total.innerHTML = `${dataTotal}`;
+setText(total, dataTotal);
 // Percentage Mobile
 const percentageMobile = get("percentage_mobile");
-percentageMobile.innerHTML = mobilePercentage;
+setText(percentageMobile, mobilePercentage);
 // Percentage Desktop
 const percentageDesktop = get("percentage_desktop");
-percentageDesktop.innerHTML = desktopPercentage;
+setText(percentageDesktop, desktopPercentage);
 // Legend Mobile
 const legendCircleMobile = get("circle__mobile");
-legendCircleMobile.style.backgroundColor = dataset[0].color;
+setBgColour(legendCircleMobile, dataset[0].color);
 // Legend Desktop
 const legendCircleDesktop = get("circle__desktop");
-legendCircleDesktop.style.backgroundColor = dataset[1].color;
+setBgColour(legendCircleDesktop, dataset[1].color);
 
-
-// Chart JS Initialize
-var ctx = document.getElementById("myChart").getContext("2d");
+// Initialize ChartJS
+var ctx = get("myChart").getContext("2d");
 var myChart = new Chart(ctx, {
     type: "pie",
     data: {
