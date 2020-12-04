@@ -59,7 +59,10 @@ var ctx = get("myChart").getContext("2d");
 var myChart = new Chart(ctx, {
     type: "pie",
     data: {
-        labels: [dataset[0].label.toUpperCase(), dataset[1].label.toUpperCase()],
+        labels: [
+            dataset[0].label.toUpperCase(),
+            dataset[1].label.toUpperCase()
+        ],
         datasets: [
             {
                 data: [dataset[0].count, dataset[1].count],
