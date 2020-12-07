@@ -746,6 +746,11 @@ article {
             transform: translateX(0);
     opacity: 1;
   }
+  .nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1em;
+  }
   .content {
     -webkit-box-flex: 1;
         -ms-flex: 1;

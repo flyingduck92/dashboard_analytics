@@ -706,6 +706,12 @@ article {
 		opacity: 1;
 	}
 
+	// Sticky Navigation
+	.nav {
+		position: sticky;
+		top: 1em;
+	}
+
 	// Content Style - Desktop
 	.content {
 		flex: 1;
