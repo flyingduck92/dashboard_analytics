@@ -389,10 +389,11 @@ body {
 
 		li {
 			border-bottom: 1px solid #c3e3f5;
-			padding: 1rem 3.5rem;
 			text-align: left;
 			line-height: 22px;
 			a {
+				display: block;
+				padding: 1rem 3.5rem;
 				color: #007cbd;
 			}
 		}
@@ -429,12 +430,29 @@ body {
 }
 
 // Content Title
+.content__title {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	line-height: 22px;
+}
 .content__title h1 {
 	font-size: 32px;
 	font-weight: 900;
 	text-transform: uppercase;
 	color: #2c5498;
-	line-height: 25px;
+	margin-left: 0.5em;
+}
+
+.content__title a {
+	font-size: 1.2em;
+	width: 2em;
+	height: 2em;
+	display: grid;
+	place-items: center;
+	color: #6d8591;
+	background-color: #e0e5e8;
+	border-radius: 100vh;
 }
 
 // Content Chart Style
@@ -757,6 +775,16 @@ article {
 	.data__source {
 		grid-area: s;
 		width: 100%;
+	}
+
+	// Hide Left Arrow on Desktop size
+	.content__title {
+		a {
+			display: none;
+		}
+		h1 {
+			margin-left: 0;
+		}
 	}
 }
 
