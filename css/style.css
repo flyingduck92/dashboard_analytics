@@ -490,6 +490,12 @@ body {
   color: #6d8591;
   background-color: #e0e5e8;
   border-radius: 100vh;
+  -webkit-transition: padding-right 0.35s ease;
+  transition: padding-right 0.35s ease;
+}
+
+.content__title a:hover {
+  padding-right: 0.4em;
 }
 
 .content__chart {
@@ -682,8 +688,8 @@ article {
 }
 
 .bottom__link a span {
-  -webkit-transition: padding-left 0.5s ease;
-  transition: padding-left 0.5s ease;
+  -webkit-transition: padding-left 0.35s ease;
+  transition: padding-left 0.35s ease;
 }
 
 .bottom__link a:hover {
