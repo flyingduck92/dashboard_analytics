@@ -673,6 +673,9 @@ article {
 			"m m m k k k"
 			"s s s s s s";
 	}
+	.data__keyword_full {
+		grid-template-areas: "k k k k k k";
+	}
 	.data__overview {
 		grid-area: o;
 	}
@@ -769,6 +772,10 @@ article {
 			"m m m k k k"
 			"s s s s s s";
 	}
+	.data__keyword_full {
+		grid-template-areas: "k k k k k k";
+	}
+
 	.data__overview {
 		grid-area: o;
 	}

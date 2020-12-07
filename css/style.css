@@ -716,6 +716,9 @@ article {
     grid-gap: 1.5em;
         grid-template-areas: "o o o o o o" "m m m k k k" "s s s s s s";
   }
+  .data__keyword_full {
+        grid-template-areas: "k k k k k k";
+  }
   .data__overview {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -729,9 +732,9 @@ article {
     grid-area: m;
   }
   .data__keyword {
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
     grid-area: k;
   }
   .data__source {
@@ -818,6 +821,9 @@ article {
     grid-gap: 1.5em;
         grid-template-areas: "o o o o o o" "m m m k k k" "s s s s s s";
   }
+  .data__keyword_full {
+        grid-template-areas: "k k k k k k";
+  }
   .data__overview {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -831,9 +837,9 @@ article {
     grid-area: m;
   }
   .data__keyword {
-    -ms-grid-row: 2;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 3;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
     grid-area: k;
   }
   .data__source {
