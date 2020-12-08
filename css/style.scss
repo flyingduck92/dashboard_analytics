@@ -676,6 +676,9 @@ article {
 	.data__keyword_full {
 		grid-template-areas: "k k k k k k";
 	}
+	.data__source_full {
+		grid-template-areas: "s s s s s s";
+	}
 	.data__overview {
 		grid-area: o;
 	}
@@ -687,7 +690,6 @@ article {
 	}
 	.data__source {
 		grid-area: s;
-		width: 100%;
 	}
 }
 
@@ -775,6 +777,9 @@ article {
 	.data__keyword_full {
 		grid-template-areas: "k k k k k k";
 	}
+	.data__source_full {
+		grid-template-areas: "s s s s s s";
+	}
 
 	.data__overview {
 		grid-area: o;
@@ -787,7 +792,7 @@ article {
 	}
 	.data__source {
 		grid-area: s;
-		width: 100%;
+		// width: 100%;
 	}
 
 	// Hide Left Arrow on Desktop size
