@@ -1,3 +1,6 @@
 # Ignore prettier files
-.prettierrc
-.prettierignore
+*.prettierrc
+*.prettierignore
+
+# ignore txt files
+*.txt
