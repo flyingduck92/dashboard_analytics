@@ -777,17 +777,19 @@ article {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.table__scroll .table {
+.table__scroll .table.page__title {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 770px;
-          flex: 0 0 770px;
+      -ms-flex: 0 0 768px;
+          flex: 0 0 768px;
 }
 
-.table__scroll .table .qty {
-  white-space: nowrap;
+.table__scroll .table.page__link {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
-.table__scroll .table td:first-child a {
+.table__scroll td:first-child a {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
@@ -847,7 +849,7 @@ article {
     -ms-grid-column-span: 6;
     grid-area: s;
   }
-  .table__scroll .table {
+  .table__scroll .table.page__title {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -855,6 +857,7 @@ article {
 }
 
 /* Desktop Layout 1160px - Snap Header, Nav and Contents*/
+/* Desktop Layout 1280 - test layout */
 @media (min-width: 1160px) {
   .wrapper {
     -webkit-box-orient: horizontal;
@@ -967,7 +970,7 @@ article {
   }
 }
 
-@media (min-width: 1468px) {
+@media (min-width: 1440px) {
   .sidebar__nav {
     background-color: unset;
     position: unset;
