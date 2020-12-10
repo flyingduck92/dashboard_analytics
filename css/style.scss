@@ -127,7 +127,8 @@ body {
 //Header & Content min-width
 .header__form,
 .content {
-	min-width: 550px;
+	// min-width: 550px;
+	min-width: calc(500px + 9em);
 }
 
 // Header form style
@@ -424,9 +425,6 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 1.25em;
-
-	// minWidth content
-	min-width: calc(645px + 4em);
 }
 
 // Content Title
@@ -444,6 +442,7 @@ body {
 	margin-left: 0.5em;
 }
 
+// arrow back to index
 .content__title a {
 	/* https://www.htmlsymbols.xyz/arrow-symbols */
 	font-size: 1.2em;
@@ -459,6 +458,22 @@ body {
 	&:hover {
 		padding-right: 0.4em;
 	}
+}
+
+// detailPage
+.detail__page {
+	line-height: unset;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.detail__page .title {
+	text-transform: unset;
+	margin-left: 0;
+}
+
+.filter__scroll {
 }
 
 // Content Chart Style
@@ -588,7 +603,7 @@ article {
 		background-color: #f7f7f7;
 	}
 
-	td:nth-child(3) {
+	td:last-child {
 		text-align: center;
 	}
 
@@ -597,7 +612,7 @@ article {
 		background-color: unset;
 		text-align: left;
 
-		th:nth-child(3) {
+		th:last-child {
 			text-align: center;
 		}
 	}
@@ -606,9 +621,8 @@ article {
 		Line Clamps size 3 throw ellipsis when overflow
 		-- https://css-tricks.com/almanac/properties/l/line-clamp/
 	*/
-	td:nth-child(1) a,
-	td:nth-child(2) a,
-	td:nth-child(3) {
+	& .title a,
+	& .link a {
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
@@ -628,6 +642,19 @@ article {
 	.source__link a {
 		font-weight: 700;
 		color: #007cbd;
+	}
+
+	// detailpage
+	.detail__link a {
+		font-weight: 700;
+		color: #007cbd;
+
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+
+		line-height: 25px;
 	}
 }
 
