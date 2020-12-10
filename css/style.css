@@ -534,11 +534,28 @@ body {
   display: none;
 }
 
-.filter__scroll .filter__item {
+.filter__scroll .filter__button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   border: 1px solid blue;
+  border-radius: 1em;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.filter {
+  border: 1px solid #84c6e9;
+  background-color: #e3f5fe;
+  color: #007cbd;
+}
+
+.clear {
+  border: 1px solid #007cbd;
+  background-color: #007cbd;
+  color: #e3f5fe;
 }
 
 .content__chart {
@@ -657,7 +674,6 @@ article {
 }
 
 .table {
-  border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   font-size: 1em;
@@ -719,16 +735,6 @@ article {
   color: #007cbd;
 }
 
-.table .detail__link a {
-  display: -webkit-box;
-  -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 25px;
-  font-weight: 700;
-  color: #007cbd;
-}
-
 .bottom__link a {
   display: block;
   text-align: center;
@@ -750,6 +756,38 @@ article {
 
 .bottom__link a:hover span {
   padding-left: 8px;
+}
+
+.table__scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5em;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table__scroll .table {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 768px;
+          flex: 0 0 768px;
+}
+
+.table__scroll .table .detail__link a {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 25px;
+  font-weight: 700;
+  color: #007cbd;
+}
+
+.table__scroll::-webkit-scrollbar {
+  display: none;
 }
 
 /* Data Table Style END */
@@ -797,6 +835,11 @@ article {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
     grid-area: s;
+  }
+  .table__scroll .table {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
   }
 }
 
