@@ -714,13 +714,17 @@ article {
   text-align: center;
 }
 
-.table .title a,
+.table td:first-child a,
 .table .link a {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 25px;
+}
+
+.table td:last-child {
+  white-space: nowrap;
 }
 
 .table .title a {
@@ -783,7 +787,7 @@ article {
   white-space: nowrap;
 }
 
-.table__scroll .table .detail__link a {
+.table__scroll .table td:first-child a {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;

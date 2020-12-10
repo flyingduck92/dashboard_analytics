@@ -661,7 +661,7 @@ article {
 		Line Clamps size 3 throw ellipsis when overflow
 		-- https://css-tricks.com/almanac/properties/l/line-clamp/
 	*/
-	& .title a,
+	& td:first-child a,
 	& .link a {
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
@@ -669,6 +669,10 @@ article {
 		overflow: hidden;
 
 		line-height: 25px;
+	}
+
+	td:last-child {
+		white-space: nowrap;
 	}
 
 	.title a {
@@ -720,7 +724,7 @@ article {
 		.qty {
 			white-space: nowrap;
 		}
-		.detail__link {
+		td:first-child {
 			a {
 				display: -webkit-box;
 				-webkit-line-clamp: 5;
