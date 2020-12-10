@@ -518,7 +518,6 @@ body {
 
 .filter__scroll {
   padding: 0.5em 0;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
