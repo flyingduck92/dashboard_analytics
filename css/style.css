@@ -744,6 +744,7 @@ article {
 
 .bottom__link a {
   display: block;
+  width: 100%;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -779,8 +780,8 @@ article {
 
 .table__scroll .table.page__title {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 768px;
-          flex: 0 0 768px;
+      -ms-flex: 0 0 770px;
+          flex: 0 0 770px;
 }
 
 .table__scroll .table.page__link {
@@ -857,7 +858,7 @@ article {
 }
 
 /* Desktop Layout 1160px - Snap Header, Nav and Contents*/
-/* Desktop Layout 1280 - test layout */
+/* Desktop Layout 1280 - tester*/
 @media (min-width: 1160px) {
   .wrapper {
     -webkit-box-orient: horizontal;
