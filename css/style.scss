@@ -128,7 +128,7 @@ body {
 .header__form,
 .content {
 	// min-width: 550px;
-	min-width: calc(500px + 10em);
+	min-width: calc(500px + 11em);
 }
 
 // Header form style
@@ -420,7 +420,7 @@ body {
 
 	background-color: #f6f7fb;
 	border-radius: 2em;
-	padding: 2em 1.5em;
+	padding: 1.5em;
 
 	display: flex;
 	flex-direction: column;
