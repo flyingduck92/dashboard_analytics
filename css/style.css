@@ -123,7 +123,7 @@ body {
 /* Mobile Layout */
 .header__form,
 .content {
-  min-width: calc(500px + 9em);
+  min-width: calc(500px + 10em);
 }
 
 .header__form {
@@ -446,7 +446,7 @@ body {
 .content {
   background-color: #f6f7fb;
   border-radius: 2em;
-  padding: 2em;
+  padding: 2em 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,13 +695,13 @@ article {
 }
 
 .table .detail__link a {
-  font-weight: 700;
-  color: #007cbd;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 25px;
+  font-weight: 700;
+  color: #007cbd;
 }
 
 .bottom__link a {
