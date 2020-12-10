@@ -481,6 +481,10 @@ body {
 	-webkit-overflow-scrolling: touch;
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 
+	// scrollsnap
+	// scroll-snap-type: x proximity; // this is default
+	scroll-snap-type: x mandatory;
+
 	&::-webkit-scrollbar {
 		display: none;
 	}
@@ -488,8 +492,11 @@ body {
 
 // Filter button
 .filter__scroll a.filter__button {
-	flex: 0 0 auto;
 	border: 1px solid blue;
+	flex: 0 0 auto;
+
+	// scrollsnap align start
+	scroll-snap-align: start;
 
 	border-radius: 1em;
 	padding: 4px 12px;
@@ -881,7 +888,7 @@ article {
 
 	// Hide Left Arrow on Desktop size
 	.content__title {
-		a {
+		a.arrow__left {
 			display: none;
 		}
 		h1 {
