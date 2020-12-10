@@ -720,6 +720,7 @@ article {
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 
 	& .table {
+		&.page__activeOnIndex,
 		&.page__title {
 			flex: 0 0 770px;
 		}
@@ -788,6 +789,7 @@ article {
 	}
 
 	.table__scroll .table {
+		&.page__activeOnIndex,
 		&.page__title {
 			flex: 0 0 auto;
 		}
