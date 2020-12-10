@@ -477,7 +477,7 @@ body {
   margin-left: 0.5em;
 }
 
-.content__title a {
+.content__title a.arrow__left {
   /* https://www.htmlsymbols.xyz/arrow-symbols */
   font-size: 1.2em;
   width: 2em;
@@ -492,7 +492,7 @@ body {
   transition: padding-right 0.35s ease;
 }
 
-.content__title a:hover {
+.content__title a.arrow__left:hover {
   padding-right: 0.4em;
 }
 
@@ -534,7 +534,7 @@ body {
   display: none;
 }
 
-.filter__scroll .filter__button {
+.filter__scroll a.filter__button {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;

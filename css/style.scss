@@ -438,7 +438,7 @@ body {
 }
 
 // arrow back to index
-.content__title a {
+.content__title a.arrow__left {
 	/* https://www.htmlsymbols.xyz/arrow-symbols */
 	font-size: 1.2em;
 	width: 2em;
@@ -486,7 +486,8 @@ body {
 	}
 }
 
-.filter__scroll .filter__button {
+// Filter button
+.filter__scroll a.filter__button {
 	flex: 0 0 auto;
 	border: 1px solid blue;
 
