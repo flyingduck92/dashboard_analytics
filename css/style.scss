@@ -707,8 +707,11 @@ article {
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 
 	& .table {
-		flex: 0 0 768px;
+		flex: 0 0 770px;
 
+		.qty {
+			white-space: nowrap;
+		}
 		.detail__link {
 			a {
 				display: -webkit-box;

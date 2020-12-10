@@ -772,8 +772,12 @@ article {
 
 .table__scroll .table {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 768px;
-          flex: 0 0 768px;
+      -ms-flex: 0 0 770px;
+          flex: 0 0 770px;
+}
+
+.table__scroll .table .qty {
+  white-space: nowrap;
 }
 
 .table__scroll .table .detail__link a {
