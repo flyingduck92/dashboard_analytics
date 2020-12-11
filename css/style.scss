@@ -438,7 +438,7 @@ body {
 	word-break: break-all;
 }
 .content__title h1 {
-	font-size: 32px;
+	font-size: 18px;
 	font-weight: 900;
 	text-transform: uppercase;
 	color: #2c5498;
@@ -616,8 +616,9 @@ article {
 /* Subtitle  */
 .data__subtitle {
 	margin: 0.5em 0;
-	font-size: 24px;
+	font-size: 1em;
 	font-weight: 700;
+	line-height: 22px;
 	color: #007cbd;
 	text-transform: uppercase;
 }
@@ -628,7 +629,7 @@ article {
 	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 1em;
 	width: 100%;
-	padding: 7px 14px;
+	padding: 4px 8px;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 }
 
@@ -639,8 +640,16 @@ article {
 
 	td,
 	th {
+		font-size: 14px;
 		padding: 8px;
 		color: #333;
+	}
+
+	th {
+		font-weight: 600;
+	}
+	td {
+		font-weight: 500;
 	}
 
 	tr:not(:first-child):hover {
@@ -679,7 +688,8 @@ article {
 		line-height: 25px;
 	}
 
-	& .link a {
+	& .link a,
+	& .detail__link a {
 		// Handler for the long string like URL
 		/* https://css-tricks.com/almanac/properties/w/word-break/ */
 		word-break: break-all;
@@ -692,8 +702,9 @@ article {
 		white-space: nowrap;
 	}
 
-	.title a {
-		font-weight: 700;
+	.title a,
+	.detail__link a {
+		font-weight: 600;
 		color: #007cbd;
 	}
 	.source__title a {
@@ -764,8 +775,14 @@ article {
 }
 
 /* Tablet Layout 768px - Snap Content Data Only */
-@media (min-width: 768px) {
+/* Tablet Layout 625px - Snap Content Data Only */
+@media (min-width: 600px) {
 	// Content Data Style - Tablet
+	* {
+		// increase font @ break point
+		font-size: 14px;
+	}
+
 	.content__data {
 		display: grid;
 		grid-gap: 1.5em;
@@ -803,7 +820,13 @@ article {
 
 /* Desktop Layout 1160px - Snap Header, Nav and Contents*/
 /* Desktop Layout 1280 - tester*/
-@media (min-width: 1160px) {
+/* Desktop Layout 900 - tester*/
+@media (min-width: 900px) {
+	// Content Data Style - Desktop
+	* {
+		// increase font @ break point
+		font-size: 16px;
+	}
 	.wrapper {
 		flex-direction: row;
 		flex-wrap: wrap;

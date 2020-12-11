@@ -472,7 +472,7 @@ body {
 }
 
 .content__title h1 {
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 900;
   text-transform: uppercase;
   color: #2c5498;
@@ -659,8 +659,9 @@ article {
 /* Subtitle  */
 .data__subtitle {
   margin: 0.5em 0;
-  font-size: 24px;
+  font-size: 1em;
   font-weight: 700;
+  line-height: 22px;
   color: #007cbd;
   text-transform: uppercase;
 }
@@ -671,7 +672,7 @@ article {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 1em;
   width: 100%;
-  padding: 7px 14px;
+  padding: 4px 8px;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 }
@@ -688,8 +689,17 @@ article {
 
 .table td,
 .table th {
+  font-size: 14px;
   padding: 8px;
   color: #333;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.table td {
+  font-weight: 500;
 }
 
 .table tr:not(:first-child):hover {
@@ -723,7 +733,8 @@ article {
   line-height: 25px;
 }
 
-.table .link a {
+.table .link a,
+.table .detail__link a {
   /* https://css-tricks.com/almanac/properties/w/word-break/ */
   word-break: break-all;
   -webkit-hyphens: auto;
@@ -735,8 +746,9 @@ article {
   white-space: nowrap;
 }
 
-.table .title a {
-  font-weight: 700;
+.table .title a,
+.table .detail__link a {
+  font-weight: 600;
   color: #007cbd;
 }
 
@@ -811,7 +823,11 @@ article {
 }
 
 /* Tablet Layout 768px - Snap Content Data Only */
-@media (min-width: 768px) {
+/* Tablet Layout 625px - Snap Content Data Only */
+@media (min-width: 600px) {
+  * {
+    font-size: 14px;
+  }
   .content__data {
     display: -ms-grid;
     display: grid;
@@ -857,7 +873,11 @@ article {
 
 /* Desktop Layout 1160px - Snap Header, Nav and Contents*/
 /* Desktop Layout 1280 - tester*/
-@media (min-width: 1160px) {
+/* Desktop Layout 900 - tester*/
+@media (min-width: 900px) {
+  * {
+    font-size: 16px;
+  }
   .wrapper {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
