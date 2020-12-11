@@ -720,12 +720,13 @@ article {
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 
 	& .table {
-		&.page__activepage,
-		&.page__title {
+		// Has scroll if basis fixed
+		&.fixed__basis {
 			flex: 0 0 770px;
 		}
 
-		&.page__link {
+		// Has scroll if basis fixed
+		&.auto__basis {
 			flex: 0 0 auto;
 		}
 	}
@@ -788,9 +789,9 @@ article {
 		grid-area: s;
 	}
 
+	// Fixed basis to auto @media 768px
 	.table__scroll .table {
-		&.page__activepage,
-		&.page__title {
+		&.fixed__basis {
 			flex: 0 0 auto;
 		}
 	}

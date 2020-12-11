@@ -777,13 +777,13 @@ article {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
-.table__scroll .table.page__activepage, .table__scroll .table.page__title {
+.table__scroll .table.fixed__basis {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 770px;
           flex: 0 0 770px;
 }
 
-.table__scroll .table.page__link {
+.table__scroll .table.auto__basis {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -849,7 +849,7 @@ article {
     -ms-grid-column-span: 6;
     grid-area: s;
   }
-  .table__scroll .table.page__activepage, .table__scroll .table.page__title {
+  .table__scroll .table.fixed__basis {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
