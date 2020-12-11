@@ -319,7 +319,7 @@ body {
 	visibility: unset;
 	transform: translateX(0);
 	opacity: 1;
-	z-index: 1;
+	z-index: 666;
 }
 
 // Navigation Close
@@ -432,10 +432,6 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	line-height: 22px;
-
-	// Handler for the long string like URL
-	/* https://css-tricks.com/almanac/properties/w/word-break/ */
-	word-break: break-all;
 }
 .content__title h1 {
 	font-size: 18px;
@@ -443,6 +439,13 @@ body {
 	text-transform: uppercase;
 	color: #2c5498;
 	margin-left: 0.5em;
+
+	// Handler for the long string like URL
+	/* https://css-tricks.com/almanac/properties/w/word-break/ */
+	word-break: keep-all;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 
 // arrow back to index
@@ -518,6 +521,13 @@ body {
 	border: 1px solid #84c6e9;
 	background-color: #e3f5fe;
 	color: #007cbd;
+
+	// Handler for the long string like URL
+	/* https://css-tricks.com/almanac/properties/w/word-break/ */
+	word-break: break-all;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 
 .clear {
