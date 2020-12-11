@@ -6,6 +6,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
 }
 
 *:focus-visible {
@@ -120,11 +122,6 @@ body {
 }
 
 /* Mobile Layout */
-.header__form,
-.content {
-  min-width: calc(500px + 11em);
-}
-
 .header__form {
   display: -ms-grid;
   display: grid;
@@ -467,6 +464,8 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
   line-height: 22px;
+  /* https://css-tricks.com/almanac/properties/w/word-break/ */
+  word-break: break-all;
 }
 
 .content__title h1 {
@@ -648,7 +647,6 @@ body {
   display: grid;
   place-items: center;
   grid-gap: 1em;
-  min-width: 500px;
 }
 
 article {
@@ -716,10 +714,18 @@ article {
 .table td:first-child a,
 .table .link a {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 25px;
+}
+
+.table .link a {
+  /* https://css-tricks.com/almanac/properties/w/word-break/ */
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 
 .table td:last-child {
@@ -779,24 +785,14 @@ article {
 
 .table__scroll .table.fixed__basis {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 770px;
-          flex: 0 0 770px;
+      -ms-flex: 0 0 550px;
+          flex: 0 0 550px;
 }
 
 .table__scroll .table.auto__basis {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-}
-
-.table__scroll td:first-child a {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  line-height: 25px;
-  font-weight: 700;
-  color: #007cbd;
 }
 
 .table__scroll::-webkit-scrollbar {

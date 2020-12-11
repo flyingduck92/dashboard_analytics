@@ -8,6 +8,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
 
 	&:focus-visible {
 		outline: 1px solid #ef672f;
@@ -123,7 +125,7 @@ body {
 .header__form,
 .content {
 	// min-width: 550px;
-	min-width: calc(500px + 11em);
+	// min-width: calc(500px + 11em);
 }
 
 // Header form style
@@ -428,6 +430,10 @@ body {
 	align-items: center;
 	justify-content: flex-start;
 	line-height: 22px;
+
+	// Handler for the long string like URL
+	/* https://css-tricks.com/almanac/properties/w/word-break/ */
+	word-break: break-all;
 }
 .content__title h1 {
 	font-size: 32px;
@@ -597,7 +603,7 @@ body {
 	grid-gap: 1em;
 
 	// border: 1px solid red;
-	min-width: 500px;
+	// min-width: 500px;
 }
 
 article {
@@ -664,11 +670,20 @@ article {
 	& td:first-child a,
 	& .link a {
 		display: -webkit-box;
-		-webkit-line-clamp: 3;
+		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 
 		line-height: 25px;
+	}
+
+	& .link a {
+		// Handler for the long string like URL
+		/* https://css-tricks.com/almanac/properties/w/word-break/ */
+		word-break: break-all;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
 	}
 
 	td:last-child {
@@ -722,25 +737,12 @@ article {
 	& .table {
 		// Has scroll if basis fixed
 		&.fixed__basis {
-			flex: 0 0 770px;
+			flex: 0 0 550px;
 		}
 
 		// Has scroll if basis fixed
 		&.auto__basis {
 			flex: 0 0 auto;
-		}
-	}
-
-	td:first-child {
-		a {
-			display: -webkit-box;
-			-webkit-line-clamp: 3;
-			-webkit-box-orient: vertical;
-			overflow: hidden;
-			line-height: 25px;
-
-			font-weight: 700;
-			color: #007cbd;
 		}
 	}
 }
