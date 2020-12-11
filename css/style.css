@@ -339,11 +339,14 @@ body {
 .cross {
   width: 60px;
   height: 60px;
-  font-size: 2em;
   background-color: #fff;
   display: -ms-grid;
   display: grid;
   place-content: center;
+}
+
+.cross p {
+  font-size: 2rem;
 }
 
 .cross:hover p {

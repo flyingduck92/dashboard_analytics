@@ -332,8 +332,10 @@ body {
 .cross {
 	width: 60px;
 	height: 60px;
-	font-size: 2em;
 	background-color: #fff;
+	p {
+		font-size: 2rem;
+	}
 
 	display: grid;
 	place-content: center;
