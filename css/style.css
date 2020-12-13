@@ -7,7 +7,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
 }
 
 *:focus-visible {
@@ -105,7 +104,7 @@ input {
 body {
   background-color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
+  font-size: 12px;
 }
 
 .wrapper {
@@ -833,7 +832,7 @@ article {
 /* Tablet Layout 768px - Snap Content Data Only */
 /* Tablet Layout 625px - Snap Content Data Only */
 @media (min-width: 600px) {
-  * {
+  body {
     font-size: 14px;
   }
   .content__data {
@@ -883,7 +882,7 @@ article {
 /* Desktop Layout 1280 - tester*/
 /* Desktop Layout 900 - tester*/
 @media (min-width: 900px) {
-  * {
+  body {
     font-size: 16px;
   }
   .wrapper {
