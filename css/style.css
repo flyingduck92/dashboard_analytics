@@ -500,6 +500,7 @@ body {
   padding-right: 0.4em;
 }
 
+.detail__medium__title,
 .detail__source__title,
 .detail__page__title,
 .detail__page__link {
@@ -517,6 +518,7 @@ body {
   gap: 0.8em;
 }
 
+.detail__medium__title .title,
 .detail__source__title .title,
 .detail__page__title .title,
 .detail__page__link .title {
