@@ -731,7 +731,12 @@ article {
   background-color: #f7f7f7;
 }
 
+.table th:last-child,
 .table td:last-child {
+  text-align: center;
+}
+
+.table .center {
   text-align: center;
 }
 
@@ -748,7 +753,7 @@ article {
 .table td:first-child a,
 .table .link a {
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 25px;
@@ -757,6 +762,19 @@ article {
 .table .link a,
 .table .detail__link a {
   /* https://css-tricks.com/almanac/properties/w/word-break/ */
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
+}
+
+.table td.source {
+  width: 150px;
+}
+
+.table td.source a {
+  /* https://css-tricks.com/almanac/properties/w/word-break/ */
+  /* normal -- keep-all -- break-all */
   word-break: break-all;
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
@@ -819,10 +837,16 @@ article {
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
+.table__scroll .table.fixed__basis__500 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 500px;
+          flex: 0 0 500px;
+}
+
 .table__scroll .table.fixed__basis {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 550px;
-          flex: 0 0 550px;
+      -ms-flex: 0 0 558px;
+          flex: 0 0 558px;
 }
 
 .table__scroll .table.auto__basis {

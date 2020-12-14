@@ -683,7 +683,12 @@ article {
 		background-color: #f7f7f7;
 	}
 
+	th:last-child,
 	td:last-child {
+		text-align: center;
+	}
+
+	.center {
 		text-align: center;
 	}
 
@@ -704,11 +709,13 @@ article {
 	& td:first-child a,
 	& .link a {
 		display: -webkit-box;
-		-webkit-line-clamp: 2;
+		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
 		overflow: hidden;
 
 		line-height: 25px;
+
+		// width: 200px;
 	}
 
 	& .link a,
@@ -719,6 +726,19 @@ article {
 		-webkit-hyphens: auto;
 		-moz-hyphens: auto;
 		hyphens: auto;
+	}
+
+	& td.source {
+		width: 150px;
+		a {
+			// Handler for the long string like URL
+			/* https://css-tricks.com/almanac/properties/w/word-break/ */
+			/* normal -- keep-all -- break-all */
+			word-break: break-all;
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			hyphens: auto;
+		}
 	}
 
 	td:last-child {
@@ -772,8 +792,12 @@ article {
 
 	& .table {
 		// Has scroll if basis fixed
+		&.fixed__basis__500 {
+			flex: 0 0 500px;
+		}
+
 		&.fixed__basis {
-			flex: 0 0 550px;
+			flex: 0 0 558px;
 		}
 
 		// Has scroll if basis fixed
