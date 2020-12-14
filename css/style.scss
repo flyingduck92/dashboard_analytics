@@ -864,6 +864,7 @@ article {
 
 	// Fixed basis to auto @media 768px
 	.table__scroll .table {
+		&.fixed__basis__500,
 		&.fixed__basis {
 			flex: 0 0 auto;
 		}
