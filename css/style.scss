@@ -467,17 +467,28 @@ body {
 }
 
 // detailPage
-.detail__page {
+.detail__page__title,
+.detail__page__link {
 	line-height: unset;
 
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 0.8em;
+
+	& .title {
+		text-transform: unset;
+		margin-left: 0;
+	}
 }
-.detail__page .title {
-	text-transform: unset;
-	margin-left: 0;
+
+.detail__page__link .title {
+	// Handler for the long string like URL
+	/* https://css-tricks.com/almanac/properties/w/word-break/ */
+	word-break: break-all;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 
 // Scroll Filter
@@ -831,7 +842,7 @@ article {
 /* Desktop Layout 1160px - Snap Header, Nav and Contents*/
 /* Desktop Layout 1280 - tester*/
 /* Desktop Layout 900 - tester*/
-@media (min-width: 900px) {
+@media (min-width: 940px) {
 	// Content Data Style - Desktop
 	body {
 		// increase font @ break point

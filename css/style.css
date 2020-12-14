@@ -500,7 +500,8 @@ body {
   padding-right: 0.4em;
 }
 
-.detail__page {
+.detail__page__title,
+.detail__page__link {
   line-height: unset;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,9 +516,18 @@ body {
   gap: 0.8em;
 }
 
-.detail__page .title {
+.detail__page__title .title,
+.detail__page__link .title {
   text-transform: unset;
   margin-left: 0;
+}
+
+.detail__page__link .title {
+  /* https://css-tricks.com/almanac/properties/w/word-break/ */
+  word-break: break-all;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 
 .filter__scroll {
@@ -881,7 +891,7 @@ article {
 /* Desktop Layout 1160px - Snap Header, Nav and Contents*/
 /* Desktop Layout 1280 - tester*/
 /* Desktop Layout 900 - tester*/
-@media (min-width: 900px) {
+@media (min-width: 940px) {
   body {
     font-size: 16px;
   }
