@@ -500,6 +500,7 @@ body {
   padding-right: 0.4em;
 }
 
+.detail__source__title,
 .detail__page__title,
 .detail__page__link {
   line-height: unset;
@@ -516,6 +517,7 @@ body {
   gap: 0.8em;
 }
 
+.detail__source__title .title,
 .detail__page__title .title,
 .detail__page__link .title {
   text-transform: unset;
