@@ -941,7 +941,7 @@ article {
             flex: 1 0 100%;
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
-        grid-template-areas: "logo . channel channel search search search search search search search user";
+        grid-template-areas: "logo logo . channel channel search search search search search search user";
   }
   .hamburger,
   .nav__close {
@@ -972,19 +972,18 @@ article {
     display: -ms-grid;
     display: grid;
     grid-gap: 1.5em;
-        grid-template-areas: "c c t t" "c c . ." "d d d d";
+        grid-template-areas: "t t t t" "c c c c" "d d d d";
   }
   .content__title {
     -ms-grid-row: 1;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
     grid-area: t;
   }
   .content__chart {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
+    -ms-grid-column-span: 4;
     grid-area: c;
   }
   .content__data {

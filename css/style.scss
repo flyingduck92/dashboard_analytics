@@ -895,7 +895,7 @@ article {
 		flex: 1 0 100%;
 
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas: "logo . channel channel search search search search search search search user";
+		grid-template-areas: "logo logo . channel channel search search search search search search user";
 	}
 
 	.hamburger,
@@ -934,8 +934,8 @@ article {
 		display: grid;
 		grid-gap: 1.5em;
 		grid-template-areas:
-			"c c t t"
-			"c c . ."
+			"t t t t"
+			"c c c c"
 			"d d d d";
 		// max-width: 100%;
 		// margin-left: auto;
