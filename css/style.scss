@@ -496,6 +496,7 @@ body {
 // Scroll Filter
 .filter__scroll {
 	padding: 0.5em 0;
+	margin-top: -0.5em;
 	// border: 1px solid red;
 
 	display: flex;
@@ -652,7 +653,7 @@ article {
 	background-color: rgba(255, 255, 255, 0.8);
 	border-radius: 1em;
 	width: 100%;
-	padding: 8px;
+	// padding: 4px;
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 }
 
@@ -894,8 +895,13 @@ article {
 	.header__form {
 		flex: 1 0 100%;
 
-		grid-template-columns: repeat(12, 1fr);
-		grid-template-areas: "logo logo . channel channel search search search search search search user";
+		grid-template-columns: 300px repeat(10, 1fr) 1fr;
+		grid-template-areas: "logo channel channel channel search search search search search search search user";
+	}
+
+	.logo {
+		max-width: 250px;
+		margin: 0 auto;
 	}
 
 	.hamburger,
