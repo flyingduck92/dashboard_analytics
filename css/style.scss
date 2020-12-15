@@ -895,8 +895,8 @@ article {
 	.header__form {
 		flex: 1 0 100%;
 
-		grid-template-columns: 300px repeat(10, 1fr) 1fr;
-		grid-template-areas: "logo channel channel channel search search search search search search search user";
+		grid-template-columns: 300px repeat(12, 1fr) 1fr;
+		grid-template-areas: "logo channel channel channel search search search search search search search search search user";
 	}
 
 	.logo {
