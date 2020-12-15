@@ -892,12 +892,12 @@ article {
 		// max-width: 1440px;
 	}
 
-	// Header Style - Desktop
+	// Header Style - Desktop @1124
 	.header__form {
 		flex: 1 0 100%;
 
-		grid-template-columns: 300px repeat(15, 1fr) 1fr;
-		grid-template-areas: "logo channel channel channel search search search search search search search search search search search search user";
+		grid-template-columns: 300px repeat(16, 1fr) 1fr;
+		grid-template-areas: "logo channel channel channel search search search search search search search search search search search search search user";
 	}
 
 	.logo {
@@ -999,8 +999,18 @@ article {
 	}
 }
 
-// Desktop 1468px or 1440
-@media (min-width: 1440px) {
+// Desktop 1440
+// Desktop 1468px
+// Desktop 1400
+@media (min-width: 1400px) {
+	// Header Style - Desktop @1400
+	.header__form {
+		flex: 1 0 100%;
+
+		grid-template-columns: 300px repeat(16, 1fr) 1fr;
+		grid-template-areas: "logo channel channel search search search search search search search search search search search search search search user";
+	}
+
 	//sidebar__nav
 	.sidebar__nav {
 		background-color: unset;
