@@ -922,7 +922,8 @@ article {
 /* Desktop Layout 1160px - Snap Header, Nav and Contents*/
 /* Desktop Layout 1280 - tester*/
 /* Desktop Layout 900 - tester*/
-@media (min-width: 940px) {
+/* Desktop Layout 1124 - tester*/
+@media (min-width: 1124px) {
   body {
     font-size: 16px;
   }
@@ -939,9 +940,9 @@ article {
     -webkit-box-flex: 1;
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
-    -ms-grid-columns: 300px (1fr)[12] 1fr;
-        grid-template-columns: 300px repeat(12, 1fr) 1fr;
-        grid-template-areas: "logo channel channel channel search search search search search search search search search user";
+    -ms-grid-columns: 300px (1fr)[15] 1fr;
+        grid-template-columns: 300px repeat(15, 1fr) 1fr;
+        grid-template-areas: "logo channel channel channel search search search search search search search search search search search search user";
   }
   .logo {
     max-width: 250px;

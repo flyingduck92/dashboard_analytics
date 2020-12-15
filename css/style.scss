@@ -875,7 +875,8 @@ article {
 /* Desktop Layout 1160px - Snap Header, Nav and Contents*/
 /* Desktop Layout 1280 - tester*/
 /* Desktop Layout 900 - tester*/
-@media (min-width: 940px) {
+/* Desktop Layout 1124 - tester*/
+@media (min-width: 1124px) {
 	// Content Data Style - Desktop
 	body {
 		// increase font @ break point
@@ -895,8 +896,8 @@ article {
 	.header__form {
 		flex: 1 0 100%;
 
-		grid-template-columns: 300px repeat(12, 1fr) 1fr;
-		grid-template-areas: "logo channel channel channel search search search search search search search search search user";
+		grid-template-columns: 300px repeat(15, 1fr) 1fr;
+		grid-template-areas: "logo channel channel channel search search search search search search search search search search search search user";
 	}
 
 	.logo {
