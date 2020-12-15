@@ -923,7 +923,7 @@ article {
 /* Desktop Layout 1280 - tester*/
 /* Desktop Layout 900 - tester*/
 /* Desktop Layout 1124 - tester*/
-@media (min-width: 1124px) {
+@media (min-width: 1024px) {
   body {
     font-size: 16px;
   }
@@ -935,6 +935,7 @@ article {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 1.5em;
+    max-width: 2000px;
   }
   .header__form {
     -webkit-box-flex: 1;
@@ -942,7 +943,7 @@ article {
             flex: 1 0 100%;
     -ms-grid-columns: 300px (1fr)[16] 1fr;
         grid-template-columns: 300px repeat(16, 1fr) 1fr;
-        grid-template-areas: "logo channel channel channel search search search search search search search search search search search search search user";
+        grid-template-areas: "logo channel channel channel channel search search search search search search search search search search search search user";
   }
   .logo {
     max-width: 250px;
