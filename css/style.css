@@ -875,6 +875,9 @@ article {
   body {
     font-size: 14px;
   }
+  .logo {
+    max-width: 190px;
+  }
   .data__table {
     padding: 4px 8px;
   }
