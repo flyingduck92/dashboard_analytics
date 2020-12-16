@@ -135,7 +135,7 @@ body {
 	grid-auto-rows: auto;
 	grid-gap: 1em;
 	grid-template-areas:
-		"ham . logo logo . user"
+		"ham logo logo logo logo user"
 		"channel channel search search search search";
 }
 .hamburger {
@@ -143,6 +143,8 @@ body {
 }
 .logo {
 	grid-area: logo;
+	max-width: 150px;
+	margin: 0 auto;
 }
 .user {
 	grid-area: user;
