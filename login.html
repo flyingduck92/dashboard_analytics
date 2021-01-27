@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Overview</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper login">
+			<main class="content__login">
+				<div class="logo login__logo">
+					<a href="index.html">
+						<img
+							srcset="img/logo.svg"
+							src="img/logo.png"
+							alt="logo"
+						/>
+					</a>
+				</div>
+				<form action="login.html" method="post" class="login__form">
+					<label for="username">Username</label>
+					<input type="text" name="username" id="username" />
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" />
+					<button type="submit" class="btn-login">Login</button>
+					<a href="forgot_password.html" class="btn-forgot">
+						Forgot Password?
+					</a>
+				</form>
+			</main>
+		</div>
+
+		<script src="js/index.js"></script>
+	</body>
+</html>

@@ -121,6 +121,65 @@ body {
 }
 
 /* Mobile Layout */
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.content__login {
+  background-color: #f6f7fb;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.08);
+  width: 70%;
+}
+
+.content__login .login__logo {
+  margin-bottom: 1em;
+}
+
+.content__login label {
+  display: block;
+  padding: .3em 0;
+}
+
+.content__login input {
+  padding: .5em 0;
+  -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1em;
+}
+
+.content__login .btn-login, .content__login .btn-forgot {
+  display: block;
+}
+
+.content__login .btn-login {
+  font-size: 1em;
+  font-weight: 700;
+  color: #fff;
+  background-color: #007cbd;
+  padding: .5em 1em;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.content__login .btn-forgot {
+  font-size: .8em;
+  font-weight: 600;
+  margin-top: .8em;
+}
+
 .header__form {
   display: -ms-grid;
   display: grid;
