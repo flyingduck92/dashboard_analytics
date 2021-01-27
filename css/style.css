@@ -161,6 +161,9 @@ body {
 
 .content__login .btn-login, .content__login .btn-forgot-page {
   display: block;
+  inline-size: -webkit-fit-content;
+  inline-size: -moz-fit-content;
+  inline-size: fit-content;
 }
 
 .content__login .btn-login, .content__login .btn-forgot {
